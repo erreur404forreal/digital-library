@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+	xmlns:jee="http://www.springframework.org/schema/jee"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/data/jpa
+http://www.springframework.org/schema/data/jpa/spring-jpa.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd
+http://www.springframework.org/schema/jee 
+http://www.springframework.org/schema/jee/spring-jee.xsd
+http://www.springframework.org/schema/tx
+http://www.springframework.org/schema/tx/spring-tx.xsd
+http://www.springframework.org/schema/aop
+http://www.springframework.org/schema/aop/spring-aop.xsd
+http://www.springframework.org/schema/mvc
+http://www.springframework.org/schema/mvc/spring-mvc.xsd ">
+
+	<!-- Spring container scans the base package of the applications to configure 
+		as beans -->
+	<!-- Define all the annotation (@Service,@Controller,@Repository @Autowired -->
+	<context:component-scan
+		base-package="org.cereme" />
+
+	<mvc:resources mapping = "/jsp/**" location = "/jsp/" />
+
+	<!--enables the spring mvc to @Controller programming model -->
+	<mvc:annotation-driven />
+
+	
+	<!-- Data Source -->
+	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName"
+			value="com.mysql.jdbc.Driver" />
+		<property name="url"
+			value="jdbc:mysql://localhost:3306/elibrary" />
+		<property name="username" value="root" />
+		<property name="password" value="1234" />
+	</bean>
+
+	<!-- Jpa Vendor Adapter -->
+	<bean id="hibernateJpaVendorAdapter"
+		class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter" />
+
+	<!-- Entity Manager -->
+	<bean id="entityManagerFactory"
+		class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="packagesToScan" value="org.cereme.model" />
+		<property name="jpaVendorAdapter"
+			ref="hibernateJpaVendorAdapter" />
+		<property name="jpaProperties">
+			<props>
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</prop>
+				<prop key="hibernate.connection.useUnicode">true</prop>
+				<prop key="hibernate.connection.CharSet">utf8mb4</prop>
+				<prop key="hibernate.connection.characterEncoding">utf8</prop>
+			</props>
+		</property>
+	</bean>
+
+	<!-- Transaction manager -->
+	<bean id="transactionManager"
+		class="org.springframework.orm.jpa.JpaTransactionManager">
+		<property name="entityManagerFactory"
+			ref="entityManagerFactory" />
+	</bean>
+	<tx:annotation-driven
+		transaction-manager="transactionManager" />
+	<!-- Activate spring data JPA repository support -->
+	<!-- Find repositories -->
+	<jpa:repositories
+		base-package="org.cereme.consumer"
+		entity-manager-factory-ref="entityManagerFactory"
+		transaction-manager-ref="transactionManager"/>
+
+
+	<!-- InternalResourceViewResolver -->
+	<bean id="viewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<!-- <property name="prefix" value="/WEB-INF/jsp/" /> -->
+		<property name="prefix" value="/jsp/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+
+	<!-- datasource-->
+	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+
+	<!-- mapping for css -->
+	<mvc:resources mapping="/resources/**"
+		location="/resources/css" />
+
+
+
+
+
+</beans>

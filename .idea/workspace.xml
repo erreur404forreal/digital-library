@@ -1,0 +1,1148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="digital-library-webapp:war" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6d87c3e9-fcf0-4029-9e98-943459e96244" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/digital-library-consumer/target/" />
+    <ignored path="$PROJECT_DIR$/digital-library-business/target/" />
+    <ignored path="$PROJECT_DIR$/digital-library_batch/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/digital-library-webapp/target/" />
+    <ignored path="$PROJECT_DIR$/digital-library-model/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1854818902">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="31" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.22" value="1" />
+          <entry key="project.open.time.24" value="2" />
+          <entry key="project.open.time.25" value="1" />
+          <entry key="project.open.time.26" value="1" />
+          <entry key="project.open.time.29" value="1" />
+          <entry key="project.open.time.3" value="2" />
+          <entry key="project.open.time.30" value="2" />
+          <entry key="project.open.time.31" value="2" />
+          <entry key="project.open.time.32" value="2" />
+          <entry key="project.open.time.33" value="2" />
+          <entry key="project.open.time.36" value="1" />
+          <entry key="project.open.time.37" value="2" />
+          <entry key="project.open.time.40" value="1" />
+          <entry key="project.open.time.43" value="1" />
+          <entry key="project.open.time.49" value="1" />
+          <entry key="project.open.time.5" value="2" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.70" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="32" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="0-SNAPSHOT" value="1" />
+          <entry key="css" value="4" />
+          <entry key="iml" value="2" />
+          <entry key="java" value="333" />
+          <entry key="jpg" value="2" />
+          <entry key="jsp" value="161" />
+          <entry key="model" value="1" />
+          <entry key="properties" value="1" />
+          <entry key="xml" value="52" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="4" />
+          <entry key="IDEA_MODULE" value="2" />
+          <entry key="Image" value="2" />
+          <entry key="JAVA" value="333" />
+          <entry key="JSP" value="161" />
+          <entry key="Properties" value="1" />
+          <entry key="UML" value="2" />
+          <entry key="XML" value="52" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="9" />
+          <entry key="java" value="7526" />
+          <entry key="jsp" value="3855" />
+          <entry key="xml" value="512" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="7526" />
+          <entry key="JSP" value="3855" />
+          <entry key="PLAIN_TEXT" value="9" />
+          <entry key="XML" value="512" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/digital-library-webapp/src/main/java/org/cereme/webapp/controller/BorrowingController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="233">
+              <caret line="72" column="68" lean-forward="true" selection-start-line="72" selection-start-column="68" selection-end-line="72" selection-end-column="68" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="392">
+              <caret line="183" selection-start-line="183" selection-end-line="187" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/digital-library.iml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/digital-library-business/src/main/java/org/cereme/business/services/implementations/BorrowingServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="223">
+              <caret line="179" column="50" selection-start-line="179" selection-start-column="50" selection-end-line="179" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/digital-library-webapp/src/main/webapp/jsp/borrowing/borrowings.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="59" column="72" selection-start-line="59" selection-start-column="72" selection-end-line="59" selection-end-column="72" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="Jsp File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>sure</find>
+      <find>anno</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/digital-library-webapp/src/main/java/org/cereme/webapp/controler/BookController.java" />
+        <option value="$PROJECT_DIR$/digital-library-webapp/src/main/java/org/cereme/webapp/controler/BorrowingController.java" />
+        <option value="$PROJECT_DIR$/digital-library-webapp/src/main/java/org/cereme/webapp/controler/WorksController.java" />
+        <option value="$PROJECT_DIR$/digital-library-model/src/main/java/org/cereme/model/User.java" />
+        <option value="$PROJECT_DIR$/digital-library-model/src/main/java/org/cereme/model/Library.java" />
+        <option value="$PROJECT_DIR$/digital-library-model/src/main/java/org/cereme/model/Book.java" />
+        <option value="$PROJECT_DIR$/digital-library-consumer/src/main/java/org/cereme/consumer/repositories/LibraryRepository.java" />
+        <option value="$PROJECT_DIR$/digital-library-business/src/main/java/org/cereme/business/services/implementations/LibraryServiceImpl.java" />
+        <option value="$PROJECT_DIR$/digital-library-business/src/main/java/org/cereme/business/services/contracts/LibraryService.java" />
+        <option value="$PROJECT_DIR$/digital-library-consumer/src/main/java/org/cereme/consumer/repositories/WorksRepository.java" />
+        <option value="$PROJECT_DIR$/digital-library-business/src/main/java/org/cereme/business/services/contracts/WorksService.java" />
+        <option value="$PROJECT_DIR$/digital-library-webapp/src/main/webapp/jsp/works/searchresults.jsp" />
+        <option value="$PROJECT_DIR$/digital-library-webapp/src/main/webapp/jsp/works/works-detail.jsp" />
+        <option value="$PROJECT_DIR$/digital-library-business/src/main/java/org/cereme/business/services/implementations/WorksServiceImpl.java" />
+        <option value="$PROJECT_DIR$/digital-library-webapp/src/main/java/org/cereme/webapp/controller/WorksController.java" />
+        <option value="$PROJECT_DIR$/digital-library-webapp/src/main/webapp/jsp/works/searchwork.jsp" />
+        <option value="$PROJECT_DIR$/digital-library-webapp/src/main/webapp/jsp/member/registration.jsp" />
+        <option value="$PROJECT_DIR$/digital-library-webapp/src/main/webapp/jsp/_include/footer.jsp" />
+        <option value="$PROJECT_DIR$/digital-library-webapp/src/main/webapp/jsp/_include/taglib.jsp" />
+        <option value="$PROJECT_DIR$/digital-library-webapp/src/main/webapp/jsp/borrowing/browse.jsp" />
+        <option value="$PROJECT_DIR$/digital-library-model/src/main/java/org/cereme/model/Member.java" />
+        <option value="$PROJECT_DIR$/digital-library-webapp/src/main/webapp/jsp/work/work-detail.jsp" />
+        <option value="$PROJECT_DIR$/digital-library-webapp/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/digital-library-webapp/src/main/webapp/jsp/work/searchwork.jsp" />
+        <option value="$PROJECT_DIR$/digital-library-webapp/src/main/webapp/WEB-INF/library-servlet.xml" />
+        <option value="$PROJECT_DIR$/digital-library-consumer/src/main/java/org/cereme/consumer/repositories/MemberRepository.java" />
+        <option value="$PROJECT_DIR$/digital-library-webapp/src/main/webapp/jsp/library/errorpage.jsp" />
+        <option value="$PROJECT_DIR$/digital-library-webapp/src/main/java/org/cereme/webapp/controller/LibraryController.java" />
+        <option value="$PROJECT_DIR$/digital-library-business/src/main/java/org/cereme/business/services/contracts/WorkService.java" />
+        <option value="$PROJECT_DIR$/digital-library-consumer/src/main/java/org/cereme/consumer/repositories/WorkRepository.java" />
+        <option value="$PROJECT_DIR$/digital-library-business/src/main/java/org/cereme/business/services/implementations/WorkServiceImpl.java" />
+        <option value="$PROJECT_DIR$/digital-library-model/src/main/java/org/cereme/model/Borrowing.java" />
+        <option value="$PROJECT_DIR$/digital-library-model/src/main/java/org/cereme/model/Work.java" />
+        <option value="$PROJECT_DIR$/digital-library-business/src/main/java/org/cereme/business/services/contracts/BorrowingService.java" />
+        <option value="$PROJECT_DIR$/digital-library-consumer/src/main/java/org/cereme/consumer/repositories/BorrowingRepository.java" />
+        <option value="$PROJECT_DIR$/digital-library-webapp/src/main/webapp/jsp/library/home.jsp" />
+        <option value="$PROJECT_DIR$/digital-library-webapp/src/main/webapp/jsp/_include/header.jsp" />
+        <option value="$PROJECT_DIR$/digital-library-webapp/src/main/webapp/jsp/member/changeinf.jsp" />
+        <option value="$PROJECT_DIR$/digital-library-webapp/src/main/webapp/jsp/work/searchedwork.jsp" />
+        <option value="$PROJECT_DIR$/digital-library-webapp/src/main/webapp/jsp/member/profile.jsp" />
+        <option value="$PROJECT_DIR$/digital-library-webapp/src/main/webapp/jsp/work/workinformations.jsp" />
+        <option value="$PROJECT_DIR$/digital-library-business/src/main/java/org/cereme/business/services/contracts/MemberService.java" />
+        <option value="$PROJECT_DIR$/digital-library-business/src/main/java/org/cereme/business/services/implementations/MemberServiceImpl.java" />
+        <option value="$PROJECT_DIR$/digital-library-webapp/src/main/java/org/cereme/webapp/controller/WorkController.java" />
+        <option value="$PROJECT_DIR$/digital-library-webapp/src/main/webapp/jsp/work/searchworks.jsp" />
+        <option value="$PROJECT_DIR$/digital-library-webapp/src/main/java/org/cereme/webapp/controller/MemberController.java" />
+        <option value="$PROJECT_DIR$/digital-library-webapp/src/main/webapp/jsp/member/login.jsp" />
+        <option value="$PROJECT_DIR$/digital-library-webapp/src/main/webapp/jsp/borrowing/succeeded.jsp" />
+        <option value="$PROJECT_DIR$/digital-library-webapp/src/main/webapp/jsp/borrowing/borrowings.jsp" />
+        <option value="$PROJECT_DIR$/digital-library-business/src/main/java/org/cereme/business/services/implementations/BorrowingServiceImpl.java" />
+        <option value="$PROJECT_DIR$/digital-library-webapp/src/main/java/org/cereme/webapp/controller/BorrowingController.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../maven/apache-maven-3.6.0" />
+        <option name="userSettingsFile" value="C:\Users\jcereme\Documents\env\maven\apache-maven-3.6.0\~\.m2\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="downloadDocsAutomatically" value="true" />
+        <option name="downloadSourcesAutomatically" value="true" />
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="digital-library" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="digital-library" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="657" />
+    <option name="y" value="186" />
+    <option name="width" value="1170" />
+    <option name="height" value="894" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <showMembers ProjectPane="true" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="digital-library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="digital-library" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="digital-library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="digital-library" type="462c0819:PsiDirectoryNode" />
+              <item name="digital-library-webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="digital-library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="digital-library" type="462c0819:PsiDirectoryNode" />
+              <item name="digital-library-webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545692649576" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.cereme.business.services" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jcereme\Documents\env\digital-library\digital-library-webapp\src\main\webapp\jsp\borrowing" />
+      <recent name="C:\Users\jcereme\Documents\env\digital-library\digital-library-webapp\src\main\webapp\jsp\member" />
+      <recent name="C:\Users\jcereme\Documents\env\digital-library\digital-library-webapp\src\main\webapp\WEB-INF\lib" />
+      <recent name="C:\Users\jcereme\Documents\env\digital-library\digital-library-webapp\src\main" />
+      <recent name="C:\Users\jcereme\Documents\env\digital-library\digital-library-business\src\main\java\org\cereme\business\services\implementations\contract\impl" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jcereme\Documents\env\digital-library\digital-library-webapp\src\main\webapp\jsp" />
+      <recent name="C:\Users\jcereme\Documents\env\digital-library\digital-library-business\src\main\java\org\cereme\business" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.13" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="digital-library-webapp:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_digital-library" />
+        <option name="HTTP_PORT" value="8082" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="52065" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="digital-library-webapp:war" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.13" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_digital-library" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="52065" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6d87c3e9-fcf0-4029-9e98-943459e96244" name="Default Changelist" comment="" />
+      <created>1542723833904</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1542723833904</updated>
+      <workItem from="1542723837810" duration="12000" />
+      <workItem from="1542723892327" duration="4561000" />
+      <workItem from="1542729273304" duration="1215000" />
+      <workItem from="1542798684868" duration="5807000" />
+      <workItem from="1542866503172" duration="11763000" />
+      <workItem from="1543272750803" duration="18857000" />
+      <workItem from="1543383111641" duration="6345000" />
+      <workItem from="1543477880504" duration="627000" />
+      <workItem from="1543506279642" duration="703000" />
+      <workItem from="1543534625623" duration="3631000" />
+      <workItem from="1543562304865" duration="4750000" />
+      <workItem from="1544017816936" duration="8680000" />
+      <workItem from="1544093332248" duration="10292000" />
+      <workItem from="1544161801329" duration="5676000" />
+      <workItem from="1544172529261" duration="7048000" />
+      <workItem from="1544373677816" duration="6202000" />
+      <workItem from="1544429692066" duration="9495000" />
+      <workItem from="1544508498800" duration="8292000" />
+      <workItem from="1544604649911" duration="596000" />
+      <workItem from="1544619509700" duration="18027000" />
+      <workItem from="1544689474937" duration="14194000" />
+      <workItem from="1544768617662" duration="17445000" />
+      <workItem from="1544901278804" duration="7482000" />
+      <workItem from="1544959994137" duration="20178000" />
+      <workItem from="1545033428493" duration="15191000" />
+      <workItem from="1545138974249" duration="15883000" />
+      <workItem from="1545210822980" duration="17020000" />
+      <workItem from="1545317696403" duration="685000" />
+      <workItem from="1545363924489" duration="5265000" />
+      <workItem from="1545377138008" duration="38000" />
+      <workItem from="1545398394627" duration="6390000" />
+      <workItem from="1545645965901" duration="18208000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="270558000" />
+  </component>
+  <component name="TodoView" selected-index="1">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="438" y="124" width="780" height="596" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.498708" visible="true" weight="0.41666666" />
+      <window_info id="Structure" order="1" sideWeight="0.501292" side_tool="true" weight="0.15222672" />
+      <window_info id="Web" order="2" side_tool="true" weight="0.3290461" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="0" sideWeight="0.48359072" weight="0.2153025" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49716598" weight="0.3291815" />
+      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.23974082" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.3291815" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3291815" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5164093" side_tool="true" weight="0.49567723" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Dependency Viewer" order="13" sideWeight="0.49878544" weight="0.3291815" />
+      <window_info anchor="bottom" id="Spring" order="14" />
+      <window_info anchor="bottom" id="Application Servers" order="15" weight="0.3291815" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24858299" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Database" order="5" weight="0.32955465" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" visible="true" weight="0.2361111" />
+      <window_info anchor="right" id="CDI" order="9" />
+      <window_info anchor="right" id="Bean Validation" order="10" weight="0.32874495" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.498708" visible="true" weight="0.2736842" />
+      <window_info id="Structure" order="1" sideWeight="0.501292" side_tool="true" weight="0.15222672" />
+      <window_info id="Web" order="2" side_tool="true" weight="0.3290461" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="0" sideWeight="0.48359072" weight="0.2153025" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49716598" weight="0.3291815" />
+      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.2188612" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.3291815" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3291815" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5164093" side_tool="true" weight="0.49567723" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Dependency Viewer" order="13" sideWeight="0.49878544" weight="0.3291815" />
+      <window_info anchor="bottom" id="Spring" order="14" />
+      <window_info anchor="bottom" id="Application Servers" order="15" weight="0.3291815" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24858299" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Database" order="5" weight="0.32955465" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" visible="true" weight="0.12388664" />
+      <window_info anchor="right" id="CDI" order="9" />
+      <window_info anchor="right" id="Bean Validation" order="10" weight="0.32874495" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/digital-library-business/src/main/java/org/cereme/business/services/contracts/LibraryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="11" column="53" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-business/src/main/java/org/cereme/business/services/implementations/LibraryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-business/src/main/java/org/cereme/business/services/contracts/WorkService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-webapp/src/main/java/org/cereme/webapp/controller/BookController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-150">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-model/src/main/java/org/cereme/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-business/src/main/java/org/cereme/business/services/implementations/WorkServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1099">
+          <caret line="105" selection-start-line="105" selection-end-line="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-model/src/main/java/org/cereme/model/Work.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-model/src/main/java/org/cereme/model/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-model/src/main/java/org/cereme/model/Member.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/org.cereme.model">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>org.cereme.model</OriginalElement>
+          <nodes>
+            <node x="21.0" y="914.0">org.cereme.model.Work</node>
+            <node x="270.0" y="702.0">org.cereme.model.Book</node>
+            <node x="324.66666666666663" y="0.0">org.cereme.model.User</node>
+            <node x="0.0" y="702.0">org.cereme.model.Library</node>
+            <node x="205.0" y="424.0">org.cereme.model.Borrowing</node>
+            <node x="193.5" y="190.0">org.cereme.model.Member</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="org.cereme.model.Work" target="org.cereme.model.Library">
+              <point x="-150.625" y="-147.0" />
+              <point x="111.375" y="889.0" />
+              <point x="93.75" y="889.0" />
+              <point x="-31.25" y="81.0" />
+            </edge>
+            <edge source="org.cereme.model.Member" target="org.cereme.model.User">
+              <point x="-108.75" y="-92.0" />
+              <point x="302.25" y="165.0" />
+              <point x="367.16666666666663" y="165.0" />
+              <point x="-42.5" y="70.0" />
+            </edge>
+            <edge source="org.cereme.model.Borrowing" target="org.cereme.model.Member">
+              <point x="-154.5" y="-114.0" />
+              <point x="256.5" y="399.0" />
+              <point x="247.875" y="399.0" />
+              <point x="-163.125" y="92.0" />
+            </edge>
+            <edge source="org.cereme.model.Work" target="org.cereme.model.Book">
+              <point x="30.125" y="-147.0" />
+              <point x="292.125" y="889.0" />
+              <point x="305.25" y="889.0" />
+              <point x="-105.75" y="81.0" />
+            </edge>
+            <edge source="org.cereme.model.Book" target="org.cereme.model.Work">
+              <point x="105.75" y="81.0" />
+              <point x="516.75" y="889.0" />
+              <point x="472.875" y="889.0" />
+              <point x="210.875" y="-147.0" />
+            </edge>
+            <edge source="org.cereme.model.Book" target="org.cereme.model.Borrowing">
+              <point x="-35.25" y="-81.0" />
+              <point x="375.75" y="677.0" />
+              <point x="359.5" y="677.0" />
+              <point x="-51.5" y="114.0" />
+            </edge>
+            <edge source="org.cereme.model.Library" target="org.cereme.model.Work">
+              <point x="31.25" y="81.0" />
+              <point x="156.25" y="889.0" />
+              <point x="171.625" y="889.0" />
+              <point x="-90.375" y="-147.0" />
+            </edge>
+            <edge source="org.cereme.model.Member" target="org.cereme.model.Borrowing">
+              <point x="54.375" y="92.0" />
+              <point x="465.375" y="399.0" />
+              <point x="462.5" y="399.0" />
+              <point x="51.5" y="-114.0" />
+            </edge>
+            <edge source="org.cereme.model.Borrowing" target="org.cereme.model.Book">
+              <point x="51.5" y="114.0" />
+              <point x="462.5" y="677.0" />
+              <point x="446.25" y="677.0" />
+              <point x="35.25" y="-81.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.6999999999999994" x="64.0" y="323.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+            <Category>Properties</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-webapp/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-765" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-business/src/main/java/org/cereme/business/services/contracts/BookService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-business/src/main/java/org/cereme/business/services/implementations/BookServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-consumer/src/main/java/org/cereme/consumer/repositories/LibraryRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-consumer/src/main/java/org/cereme/consumer/repositories/MemberRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-consumer/src/main/java/org/cereme/consumer/repositories/WorkRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-consumer/src/main/java/org/cereme/consumer/repositories/BookRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="40" lean-forward="true" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-model/src/main/java/org/cereme/model/Borrowing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-webapp/src/main/webapp/jsp/member/registration.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-204">
+          <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-webapp/src/main/webapp/resources/images/1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-webapp/src/main/webapp/resources/images/2.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="uml://MAVEN/org.cereme:digital-library:1.0-SNAPSHOT">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MAVEN</ID>
+          <OriginalElement>org.cereme:digital-library:1.0-SNAPSHOT</OriginalElement>
+          <nodes>
+            <node x="" y="">org.cereme:digital-library:1.0-SNAPSHOT</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="51.0" y="14.5" />
+          <SelectedNodes />
+          <Categories />
+          <VISIBILITY>All</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-webapp/src/main/webapp/jsp/_include/taglib.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-webapp/src/main/webapp/jsp/_include/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="118" selection-start-line="118" selection-end-line="118" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-webapp/src/main/webapp/jsp/work/workinformations.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-255">
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-webapp/src/main/webapp/jsp/borrowing/borrowinginfo.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-webapp/src/main/java/org/cereme/webapp/controller/LibraryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-webapp/src/main/webapp/jsp/member/profile.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-consumer/src/main/java/org/cereme/consumer/repositories/BorrowingRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="18" column="56" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-business/src/main/java/org/cereme/business/services/contracts/BorrowingService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-business/src/main/java/org/cereme/business/services/contracts/MemberService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="30" column="42" lean-forward="true" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-webapp/src/main/webapp/jsp/work/searchedwork.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="41" selection-start-line="41" selection-end-line="53" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-webapp/src/main/java/org/cereme/webapp/controller/WorkController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-webapp/src/main/webapp/jsp/work/searchworks.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="50" column="94" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-business/src/main/java/org/cereme/business/services/implementations/MemberServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="76" column="11" selection-start-line="76" selection-start-column="11" selection-end-line="76" selection-end-column="11" />
+          <folding>
+            <element signature="e#2187#2188#0" expanded="true" />
+            <element signature="e#2223#2224#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-webapp/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-webapp/src/main/webapp/WEB-INF/library-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="45" column="40" lean-forward="true" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-webapp/src/main/webapp/jsp/member/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="18" selection-start-line="18" selection-end-line="29" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-webapp/src/main/webapp/jsp/library/about.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-webapp/src/main/webapp/jsp/library/errorpage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-webapp/src/main/webapp/jsp/library/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="18" selection-start-line="18" selection-end-line="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-webapp/src/main/webapp/jsp/library/information.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-webapp/src/main/webapp/jsp/library/condition.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-webapp/src/main/webapp/jsp/borrowing/succeeded.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="22" column="49" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-webapp/src/main/java/org/cereme/webapp/controller/MemberController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-211">
+          <caret line="153" column="5" lean-forward="true" selection-start-line="153" selection-start-column="5" selection-end-line="153" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-webapp/src/main/webapp/jsp/member/changeinf.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-408">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-business/src/main/java/org/cereme/business/services/implementations/BorrowingServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="179" column="50" selection-start-line="179" selection-start-column="50" selection-end-line="179" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-webapp/src/main/webapp/jsp/borrowing/borrowings.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="59" column="72" selection-start-line="59" selection-start-column="72" selection-end-line="59" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-webapp/src/main/java/org/cereme/webapp/controller/BorrowingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="72" column="68" lean-forward="true" selection-start-line="72" selection-start-column="68" selection-end-line="72" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="183" selection-start-line="183" selection-end-line="187" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>digital-library-webapp:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>digital-library-webapp</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: junit:junit:3.8.1</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
