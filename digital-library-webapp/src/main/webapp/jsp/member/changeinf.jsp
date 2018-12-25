@@ -41,20 +41,16 @@
             <table class="table table-dark" style="with: 50%">
 
                 <tr>
-                    <td>Nom d'utilisateur actuel : </td>
+                    <td>Nom d'utilisateur : </td>
                     <td><input type="text" name="username" value="${loggedmember.username}"/></td>
                 </tr>
                 <tr>
-                    <td>Nouveau d'utilisateur : </td>
-                    <td><input type="text" name="newusername" /></td>
+                    <td>Mot de passe : </td>
+                    <td><input type="password" name="password" value="${loggedmember.password}"/></td>
                 </tr>
                 <tr>
-                    <td>Nouveau mot de passe : </td>
-                    <td><input type="password" name="password" /></td>
-                </tr>
-                <tr>
-                    <td>Nouvelle Addresse : </td>
-                    <td><input type="text" name="address" /></td>
+                    <td>Addresse : </td>
+                    <td><input type="textarea" name="address" value="${loggedmember.address}"/></td>
                 </tr>
             </table>
             <br>

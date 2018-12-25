@@ -183,6 +183,17 @@ public class BorrowingServiceImpl implements BorrowingService {
 		return borrowToReturn;
 	}
 
+	public Borrowing endAborrowing(Integer idborrow){
+		Borrowing borrowToReturn = borrowingRepository.findBorrowingByIdborrow(idborrow);
+
+		borrowToReturn.setReturnDate(LocalDate.now());
+		borrowToReturn.setStatus("Prêt terminé");
+		borrowToReturn = borrowingRepository.save(borrowToReturn);
+
+
+		return borrowToReturn;
+	}
+
 
 
 }

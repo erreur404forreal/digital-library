@@ -33,28 +33,16 @@
     </header>
     <main role="main" class="inner cover">
         <h1 class="cover-heading">${loggedmember.username} Trouvez votre oeuvre  </h1>
-        <hr> <form:form method="GET" name="searchwork" action="/work/search">
-        <table class="searchbook">
-            <tr>
-                <label for="author" class="sr-only"><td>Auteur</td></label>
-                <td><input type="text" id="author" class="form-control" placeholder="Auteur" name="author" /></td>
-            </tr>
-            <BR>
-            <BR>
-            <tr>
-                <label for="title" class="sr-only"><td>Titre</td></label>
-                <td><input type="text" id="title" class="form-control" placeholder="Titre" name="title" /></td>
-            </tr>
-            <BR>
-            <BR>
-            <tr>
-                <td><input type="submit" value="Rechercher" class="btn btn-outline-warning" /></td>
+        <form:form method="GET" name="searchwork" action="/work/search" class="form-signin">
 
-            </tr>
+            <label for="author" class="sr-only">Auteur</label>
+            <input type="text" id="author" class="form-control" placeholder="Auteur" name="author" />
+            <label for="title" class="sr-only">Titre</label>
+            <input type="text" id="title" class="form-control" placeholder="Titre" name="title" />
+            <BR>
+            <input type="submit" value="Rechercher" class="btn btn-outline-warning" />
 
-        </table>
-
-    </form:form>
+        </form:form>
     </main>
 
 

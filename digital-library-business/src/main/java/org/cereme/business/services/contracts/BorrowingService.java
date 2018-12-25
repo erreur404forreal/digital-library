@@ -22,5 +22,6 @@ public interface BorrowingService {
 
     Borrowing makeAborrowing(Integer workId, Member member);
     Borrowing extendAborrowing(Integer idborrow);
+    Borrowing endAborrowing(Integer idborrow);
 
 }

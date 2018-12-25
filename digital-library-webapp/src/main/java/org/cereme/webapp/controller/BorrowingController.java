@@ -70,9 +70,11 @@ public class BorrowingController {
 
             Borrowing borrowingextended = borrowingService.extendAborrowing(idborrow);
             System.out.println("about to borrow some work, step 4!");
+            List<Borrowing> borrowingList =  borrowingService.findByMember(loggedmember);
             modelAndView = new ModelAndView("borrowing/borrowings");
             modelAndView.addObject("loggedmember", loggedmember);
             modelAndView.addObject("borrowingextented", borrowingextended);
+            modelAndView.addObject("borrowingList", borrowingList);
 
         }
 
@@ -109,4 +111,35 @@ public class BorrowingController {
 
         return modelAndView;
     }
+
+    //terminate borrowing
+    @RequestMapping(value = "/borrowing/handover/{idborrow}", method = RequestMethod.GET)
+    public ModelAndView Terminate(HttpServletRequest request, @PathVariable("idborrow") Integer idborrow) {
+
+        ModelAndView modelAndView = null;
+        System.out.println("about to extend  some borrow step 1");
+        if (request != null && request.getSession().getAttribute("loggedin") == null) {
+            modelAndView = new ModelAndView("member/login");
+            modelAndView.addObject("msg", "Connectez vous pour emprunter un livre plus longtemps");
+        }else if(request != null && request.getSession().getAttribute("loggedin") != null)
+        {
+            System.out.println("about to extend  some borrow, step 2!");
+            Member loggedmember = (Member)request.getSession().getAttribute("loggedmember");
+
+
+
+
+            Borrowing borrowingended = borrowingService.endAborrowing(idborrow);
+            //Récuperer la liste des emprunts de l'utilisatateur
+            List<Borrowing> borrowingList =  borrowingService.findByMember(loggedmember);
+            modelAndView = new ModelAndView("borrowing/borrowings");
+            modelAndView.addObject("loggedmember", loggedmember);
+            modelAndView.addObject("borrowingextented", borrowingended);
+            modelAndView.addObject("borrowingList", borrowingList);
+
+        }
+
+        return modelAndView;
+    }
+
 }
