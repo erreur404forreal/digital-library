@@ -74,9 +74,9 @@ public class MemberServiceImpl implements MemberService {
 		return memberRepository.findByUsername(username);
 	}
 
-    public Member updateMemberInfos(Member memberUpdated, Member memberUpdating )
+    public Member updateMemberInfos(Member memberlogged )
     {
-        return memberUpdated;
+        return memberlogged;
     }
 	/*
 	@Transactional 
@@ -85,6 +85,10 @@ public class MemberServiceImpl implements MemberService {
 		return null;
 	}
 	*/
+
+	/*public Member savenewinformations(Member memberlogged){
+
+    }*/
 
     
 }

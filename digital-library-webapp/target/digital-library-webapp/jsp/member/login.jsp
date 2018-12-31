@@ -52,7 +52,7 @@
                 <label for="password" class="sr-only">Password</label>
                 <input type="password" id="password" class="form-control" placeholder="Password" required name="password">
                 <br>
-                <input type="submit" value="Se connecter" class="btn btn-lg btn-secondary" >
+                <input type="submit" value="Se connecter" class="btn btn-outline-warning" >
             </form:form>
             <p>${msg}</p>
         </c:otherwise>

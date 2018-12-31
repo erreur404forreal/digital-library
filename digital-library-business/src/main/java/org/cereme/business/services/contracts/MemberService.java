@@ -28,6 +28,7 @@ public interface MemberService {
 
     public boolean isValidUser(String userName, String password);
 
-    Member updateMemberInfos(Member memberUpdated, Member memberUpdating );
+    Member updateMemberInfos(Member memberlogged);
+
 
 }

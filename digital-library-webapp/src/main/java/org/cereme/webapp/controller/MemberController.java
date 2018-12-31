@@ -153,18 +153,17 @@ public class MemberController {
         return modelAndView;
     }
 
-	@RequestMapping(value = "/member/changements", method = RequestMethod.POST)
+	@RequestMapping(value = "/member/member/changements", method = RequestMethod.POST)
 	public ModelAndView changeinformations(HttpServletRequest request){
 
 
 		String username = request.getParameter("username");
-		String newusername = request.getParameter("newusername");
 		String password = request.getParameter("password");
-		String adress = request.getParameter("adress");
+		String address = request.getParameter("address");
 
 		Member memberlogged = memberService.findByUsername(username);
-		memberlogged.setAddress(adress);
-		memberlogged.setUsername(newusername);
+		memberlogged.setAddress(address);
+		memberlogged.setUsername(username);
 		memberlogged.setPassword(password);
 		memberService.updateMember(memberlogged);
 
@@ -172,6 +171,7 @@ public class MemberController {
 
 
 		ModelAndView modelAndView = new ModelAndView("member/profile");
+        modelAndView.addObject("loggedmember", memberlogged);
 
 		return modelAndView;
 	}

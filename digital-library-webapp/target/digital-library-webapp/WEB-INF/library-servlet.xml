@@ -42,8 +42,8 @@ http://www.springframework.org/schema/mvc/spring-mvc.xsd ">
 			value="com.mysql.jdbc.Driver" />
 		<property name="url"
 			value="jdbc:mysql://localhost:3306/elibrary" />
-		<property name="username" value="root" />
-		<property name="password" value="1234" />
+		<property name="username" value="theuser" />
+		<property name="password" value="12-_password" />
 	</bean>
 
 	<!-- Jpa Vendor Adapter -->

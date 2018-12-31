@@ -35,26 +35,22 @@
     <main role="main" class="inner cover">
         <h1 class="cover-heading">${loggedmember.username}, Changez ici vos informations</h1>
 
-        <form:form name="login" method="POST" action="member/changements"  >
+        <form:form name="changements" method="POST" action="member/changements"  >
 
 
             <table class="table table-dark" style="with: 50%">
 
                 <tr>
-                    <td>Nom d'utilisateur actuel : </td>
+                    <td>Nom d'utilisateur : </td>
                     <td><input type="text" name="username" value="${loggedmember.username}"/></td>
                 </tr>
                 <tr>
-                    <td>Nouveau d'utilisateur : </td>
-                    <td><input type="text" name="newusername" /></td>
+                    <td>Mot de passe : </td>
+                    <td><input type="password" name="password" value="${loggedmember.password}"/></td>
                 </tr>
                 <tr>
-                    <td>Nouveau mot de passe : </td>
-                    <td><input type="password" name="password" /></td>
-                </tr>
-                <tr>
-                    <td>Nouvelle Addresse : </td>
-                    <td><input type="text" name="address" /></td>
+                    <td>Adresse : </td>
+                    <td><textarea name="address" id="" cols="30" rows="5" >${loggedmember.address}</textarea></td>
                 </tr>
             </table>
             <br>

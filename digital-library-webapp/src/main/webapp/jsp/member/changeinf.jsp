@@ -35,7 +35,7 @@
     <main role="main" class="inner cover">
         <h1 class="cover-heading">${loggedmember.username}, Changez ici vos informations</h1>
 
-        <form:form name="login" method="POST" action="member/changements"  >
+        <form:form name="changements" method="POST" action="member/changements"  >
 
 
             <table class="table table-dark" style="with: 50%">
@@ -49,8 +49,8 @@
                     <td><input type="password" name="password" value="${loggedmember.password}"/></td>
                 </tr>
                 <tr>
-                    <td>Addresse : </td>
-                    <td><input type="textarea" name="address" value="${loggedmember.address}"/></td>
+                    <td>Adresse : </td>
+                    <td><textarea name="address" id="" cols="30" rows="5" >${loggedmember.address}</textarea></td>
                 </tr>
             </table>
             <br>

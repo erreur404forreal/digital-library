@@ -57,11 +57,17 @@
                         </li>
 
                         <c:choose>
-                            <c:when test = "${borrowing.extended==false}">
-                        <td><a href="/borrowing/extend/${borrowing.idborrow}"> <button  class="btn btn-outline-warning" data-toggle="popover" data-trigger="focus" title="Cliquez ici pour prolonger le prêt" data-content="Buy">Prolonger</button></a>
+
+                            <c:when test = "${borrowing.extended==true && borrowing.status!='Prêt terminé'}">
+                                <td><a href="/borrowing/handover/${borrowing.idborrow}"> <button  class="btn btn-outline-info" data-toggle="popover" data-trigger="focus" title="Cliquez ici pour remettre le livre" data-content="Buy">Rendre</button></a>
+                                    </c:when>
+                            <c:when test = "${borrowing.extended==false && borrowing.status!='Prêt terminé'}">
+                                <td><a href="/borrowing/extend/${borrowing.idborrow}"> <button  class="btn btn-outline-warning" data-toggle="popover" data-trigger="focus" title="Cliquez ici pour prolonger le prêt" data-content="Buy">Prolonger</button></a>
+                                <td><a href="/borrowing/handover/${borrowing.idborrow}"> <button  class="btn btn-outline-info" data-toggle="popover" data-trigger="focus" title="Cliquez ici pour remettre le livre" data-content="Buy">Rendre</button></a>
                             </c:when>
+
                             <c:otherwise>
-                        <td><a href="/borrowing/extend/${borrowing.idborrow}"> <button  class="btn btn-outline-warning" data-toggle="popover" data-trigger="focus" title="Vous ne pouvez prolonger ce prêt" data-content="Buy" disabled>Prolonger</button></a>
+
                             </c:otherwise>
                         </c:choose>
 

@@ -41,9 +41,17 @@
             Publié en : ${work.publicationYear} </br>
             Description de l'oeuvre : ${work.bookDescription} </br>
 
-            <a href="/e-library/borrow/${work.worksId}">
-                <button class="btn btn-lg btn-secondary">Emprunter</button>
-            </a>
+
+            <c:choose>
+                <c:when test = "${sessionScope.loggedin}">
+                    <td><a href="/e-library/borrow/${work.worksId}"> <button  class="btn btn-outline-warning" data-toggle="popover" data-trigger="focus" title="Cliquez ici pour emprunter ce livre" >Emprunter</button></a>
+                </c:when>
+                <c:otherwise>
+                    <td><a href="#"> <button  class="btn btn-outline-warning" data-toggle="popover" data-trigger="focus" title="Connectez vous pour emprunter ce livre" disabled>Emprunter</button></a>
+                </c:otherwise>
+            </c:choose>
+
+
         </p>
     </main>
 
