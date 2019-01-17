@@ -1,0 +1,117 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.elibrary.fr/work-ws"
+           targetNamespace="http://www.elibrary.fr/work-ws" elementFormDefault="qualified">
+
+    <xs:element name="getWorkByAuthorRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="author" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="getWorkByAuthorResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="workInfo" type="tns:workInfo" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+       <xs:element name="getWorkByTitleRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="title" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="getWorkByTitleResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="workInfo" type="tns:workInfo" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+       <xs:element name="getWorkByDateRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="date" type="xs:int"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="getWorkByDateResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="workInfo" type="tns:workInfo" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="workInfo">
+        <xs:sequence>
+            <xs:element name="workId" type="xs:integer"/>
+            <xs:element name="title" type="xs:string"/>
+            <xs:element name="author" type="xs:string"/>
+            <xs:element name="yearPublication" type="xs:int"/>
+            <xs:element name="summary" type="xs:string"/>
+            <xs:element name="stockQuantity" type="xs:int"/>
+            
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="getAllWorkRequest">
+        <xs:complexType/>
+    </xs:element>    
+    <xs:element name="getAllWorkResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="workInfo" type="tns:workInfo" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>   
+    <xs:complexType name="serviceStatus">
+        <xs:sequence>
+            <xs:element name="statusCode" type="xs:string"/>
+            <xs:element name="message" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>     
+    <xs:element name="addWorkRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="title" type="xs:string"/>
+                <xs:element name="category" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="addWorkResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="serviceStatus" type="tns:serviceStatus"/>            
+                <xs:element name="workInfo" type="tns:workInfo"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="updateWorkRequest">
+        <xs:complexType>
+            <xs:sequence>
+               <xs:element name="workInfo" type="tns:workInfo"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="updateWorkResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="serviceStatus" type="tns:serviceStatus"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="deleteWorkRequest">
+        <xs:complexType>
+            <xs:sequence>
+               <xs:element name="workId" type="xs:long"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="deleteWorkResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="serviceStatus" type="tns:serviceStatus"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>                   
+</xs:schema>

@@ -1,5 +1,0 @@
-org\cereme\consumer\repositories\BookRepository.class
-org\cereme\consumer\repositories\BorrowingRepository.class
-org\cereme\consumer\repositories\MemberRepository.class
-org\cereme\consumer\repositories\WorkRepository.class
-org\cereme\consumer\repositories\LibraryRepository.class
