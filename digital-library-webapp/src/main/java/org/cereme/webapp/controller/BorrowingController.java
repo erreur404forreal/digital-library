@@ -34,22 +34,14 @@ public class BorrowingController {
 
 
 
-    //Does not work yet
+
     @RequestMapping(value = "/borrowing/list", method = RequestMethod.GET)
     public ModelAndView searchbymember(HttpServletRequest request){
-        System.out.println("searching borrowings by member");
         String username = request.getParameter("login");
-        System.out.println("searching borrowings by member point 2");
         Member loggedmember = (Member)request.getSession().getAttribute("loggedmember");
         List<Borrowing> borrowingList =  borrowingService.findByMember(loggedmember);
-        System.out.println("searching borrowings by member point 3");
-
         ModelAndView modelAndView = new ModelAndView("borrowing/borrowings");
-        System.out.println("searching borrowings by member point 4");
         modelAndView.addObject("borrowingList", borrowingList);
-        System.out.println(borrowingList.size());
-
-
         return modelAndView;
     }
 
@@ -58,18 +50,14 @@ public class BorrowingController {
     public ModelAndView Extendborrow(HttpServletRequest request, @PathVariable("idborrow") Integer idborrow) {
 
         ModelAndView modelAndView = null;
-        System.out.println("about to extend  some borrow step 1");
         if (request != null && request.getSession().getAttribute("loggedin") == null) {
             modelAndView = new ModelAndView("member/login");
             modelAndView.addObject("msg", "Connectez vous pour emprunter un livre plus longtemps");
         }else if(request != null && request.getSession().getAttribute("loggedin") != null)
         {
-            System.out.println("about to extend  some borrow, step 2!");
             Member loggedmember = (Member)request.getSession().getAttribute("loggedmember");
 
-
             Borrowing borrowingextended = borrowingService.extendAborrowing(idborrow);
-            System.out.println("about to borrow some work, step 4!");
             List<Borrowing> borrowingList =  borrowingService.findByMember(loggedmember);
             modelAndView = new ModelAndView("borrowing/borrowings");
             modelAndView.addObject("loggedmember", loggedmember);
@@ -77,7 +65,6 @@ public class BorrowingController {
             modelAndView.addObject("borrowingList", borrowingList);
 
         }
-
 
         return modelAndView;
     }
@@ -89,19 +76,16 @@ public class BorrowingController {
     public ModelAndView borrowbook(HttpServletRequest request, @PathVariable("worksId") Integer worksId) {
 
         ModelAndView modelAndView = null;
-        System.out.println("about to borrow some work step 1");
         if (request != null && request.getSession().getAttribute("loggedin") == null) {
             modelAndView = new ModelAndView("member/login");
             modelAndView.addObject("msg", "Connectez vous pour emprunter un livre");
         }else if(request != null && request.getSession().getAttribute("loggedin") != null)
         {
-            System.out.println("about to borrow some work, step 2!");
+
             Member loggedmember = (Member)request.getSession().getAttribute("loggedmember");
             Work borrowed = workService.findWorksById(worksId);
-            System.out.println("about to borrow some work, step 3! " + loggedmember.getLastName()+ " workID : " + worksId );
 
                 Borrowing borrowingmade = borrowingService.makeAborrowing(worksId, loggedmember);
-                System.out.println("about to borrow some work, step 4!");
                 modelAndView = new ModelAndView("borrowing/succeeded");
                 modelAndView.addObject("loggedmember", loggedmember);
                 modelAndView.addObject("borrowedbook", borrowed);
@@ -117,16 +101,12 @@ public class BorrowingController {
     public ModelAndView Terminate(HttpServletRequest request, @PathVariable("idborrow") Integer idborrow) {
 
         ModelAndView modelAndView = null;
-        System.out.println("about to extend  some borrow step 1");
         if (request != null && request.getSession().getAttribute("loggedin") == null) {
             modelAndView = new ModelAndView("member/login");
             modelAndView.addObject("msg", "Connectez vous pour emprunter un livre plus longtemps");
         }else if(request != null && request.getSession().getAttribute("loggedin") != null)
         {
-            System.out.println("about to extend  some borrow, step 2!");
             Member loggedmember = (Member)request.getSession().getAttribute("loggedmember");
-
-
 
 
             Borrowing borrowingended = borrowingService.endAborrowing(idborrow);

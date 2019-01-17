@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/digital-library-model/digital-library-model.iml" filepath="$PROJECT_DIR$/digital-library-model/digital-library-model.iml" />
       <module fileurl="file://$PROJECT_DIR$/digital-library-webapp/digital-library-webapp.iml" filepath="$PROJECT_DIR$/digital-library-webapp/digital-library-webapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/digital-library_batch/digital-library_batch.iml" filepath="$PROJECT_DIR$/digital-library_batch/digital-library_batch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/webserviceproducer/webserviceproducer.iml" filepath="$PROJECT_DIR$/webserviceproducer/webserviceproducer.iml" />
     </modules>
   </component>
 </project>

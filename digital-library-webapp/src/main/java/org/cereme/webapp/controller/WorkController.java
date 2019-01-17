@@ -38,14 +38,6 @@ public class WorkController {
 		return modelAndView;
 	}
 
-	@RequestMapping(value = "/work/{id}", method = RequestMethod.GET)
-	public @ResponseBody
-    String sayHello(@PathVariable Integer id) {
-
-		System.out.println("work found");
-		String title = workService.findWorksById(id).getTitle();
-		return "The book is " + title;
-	}
 
 
 	@RequestMapping(value = "/library/author/{author}", method = RequestMethod.GET)
@@ -80,23 +72,6 @@ public class WorkController {
 
 		return modelAndView;
 	}
-
-
-
-	/*@RequestMapping(value = "/work/library/genre/{literarygenre}", method = RequestMethod.GET)
-	public @ResponseBody
-	List<Work> getWorksbyLiteraryGenre(@PathVariable String literaryGenre) {
-		List<Work> workList = workService.findWorkByLiteraryGenre(literaryGenre);
-		for(Work work : workList)
-		{
-			System.out.println("Titre : " + work.getTitle());
-			System.out.println("Auteur : " + work.getAuthor());
-			System.out.println("Description du livre : " + work.getBookDescription());
-		}
-        //Retourner page jsp avec modeleandview contenant le worklist
-		return workList;
-
-	}*/
 
 
 	@RequestMapping(value = "/work/year", method = RequestMethod.GET)

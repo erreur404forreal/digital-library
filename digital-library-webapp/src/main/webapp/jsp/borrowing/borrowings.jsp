@@ -17,16 +17,16 @@
         <div class="inner">
             <h3 class="masthead-brand">E-Library</h3>
             <nav class="nav nav-masthead justify-content-center">
-                <a class="nav-link " href="/">Home</a>
-                <a class="nav-link" href="/searchwork">Oeuvres</a>
-                <a class="nav-link active" href="/borrowing/list">Emprunts</a>
-                <a class="nav-link" href="/member/profile">Profil</a>
+                <a class="nav-link " href="${pageContext.request.contextPath}/home">Home</a>
+                <a class="nav-link" href="${pageContext.request.contextPath}/searchwork">Oeuvres</a>
+                <a class="nav-link active" href="${pageContext.request.contextPath}/borrowing/list">Emprunts</a>
+                <a class="nav-link" href="${pageContext.request.contextPath}/member/profile">Profil</a>
                 <c:choose>
                     <c:when test = "${sessionScope.loggedin}">
-                        <a class="nav-link" href="/library/logout">Logout</a>
+                        <a class="nav-link" href="${pageContext.request.contextPath}/library/logout">Logout</a>
                     </c:when>
                     <c:otherwise>
-                        <a class= "nav-link" href="/">Login</a>
+                        <a class= "nav-link" href="${pageContext.request.contextPath}/home">Login</a>
                     </c:otherwise>
                 </c:choose>
             </nav>
@@ -59,11 +59,11 @@
                         <c:choose>
 
                             <c:when test = "${borrowing.extended==true && borrowing.status!='Prêt terminé'}">
-                                <td><a href="/borrowing/handover/${borrowing.idborrow}"> <button  class="btn btn-outline-info" data-toggle="popover" data-trigger="focus" title="Cliquez ici pour remettre le livre" data-content="Buy">Rendre</button></a>
+                                <td><a href="${pageContext.request.contextPath}/borrowing/handover/${borrowing.idborrow}"> <button  class="btn btn-outline-info" data-toggle="popover" data-trigger="focus" title="Cliquez ici pour remettre le livre" data-content="Buy">Rendre</button></a>
                                     </c:when>
                             <c:when test = "${borrowing.extended==false && borrowing.status!='Prêt terminé'}">
-                                <td><a href="/borrowing/extend/${borrowing.idborrow}"> <button  class="btn btn-outline-warning" data-toggle="popover" data-trigger="focus" title="Cliquez ici pour prolonger le prêt" data-content="Buy">Prolonger</button></a>
-                                <td><a href="/borrowing/handover/${borrowing.idborrow}"> <button  class="btn btn-outline-info" data-toggle="popover" data-trigger="focus" title="Cliquez ici pour remettre le livre" data-content="Buy">Rendre</button></a>
+                                <td><a href="${pageContext.request.contextPath}/borrowing/extend/${borrowing.idborrow}"> <button  class="btn btn-outline-warning" data-toggle="popover" data-trigger="focus" title="Cliquez ici pour prolonger le prêt" data-content="Buy">Prolonger</button></a>
+                                <td><a href="${pageContext.request.contextPath}/borrowing/handover/${borrowing.idborrow}"> <button  class="btn btn-outline-info" data-toggle="popover" data-trigger="focus" title="Cliquez ici pour remettre le livre" data-content="Buy">Rendre</button></a>
                             </c:when>
 
                             <c:otherwise>

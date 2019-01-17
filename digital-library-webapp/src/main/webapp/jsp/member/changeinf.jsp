@@ -16,16 +16,16 @@
         <div class="inner">
             <h3 class="masthead-brand">E-Library </h3>
             <nav class="nav nav-masthead justify-content-center">
-                <a class="nav-link " href="/">Home</a>
-                <a class="nav-link" href="/searchwork">Oeuvres</a>
-                <a class="nav-link" href="/borrowing/list">Emprunts</a>
-                <a class="nav-link active" href="/member/profile">Profil</a>
+                <a class="nav-link " href="${pageContext.request.contextPath}/home">Home</a>
+                <a class="nav-link" href="${pageContext.request.contextPath}/searchwork">Oeuvres</a>
+                <a class="nav-link" href="${pageContext.request.contextPath}/borrowing/list">Emprunts</a>
+                <a class="nav-link active" href="${pageContext.request.contextPath}/member/profile">Profil</a>
                 <c:choose>
                 <c:when test = "${sessionScope.loggedin}">
-                    <a class="nav-link" href="/library/logout">Logout</a>
+                    <a class="nav-link" href="${pageContext.request.contextPath}/library/logout">Logout</a>
                 </c:when>
                 <c:otherwise>
-                    <a class= "nav-link" href="/">Login</a>
+                    <a class= "nav-link" href="${pageContext.request.contextPath}/home">Login</a>
                 </c:otherwise>
             </c:choose>
             </nav>
@@ -41,12 +41,12 @@
             <table class="table table-dark" style="with: 50%">
 
                 <tr>
-                    <td>Nom d'utilisateur : </td>
-                    <td><input type="text" name="username" value="${loggedmember.username}"/></td>
+                    <!--<td>Nom d'utilisateur : </td>-->
+                    <td><input type="text" name="username" value="${loggedmember.username}" hidden/></td>
                 </tr>
                 <tr>
-                    <td>Mot de passe : </td>
-                    <td><input type="password" name="password" value="${loggedmember.password}"/></td>
+                    <td>Email : </td>
+                    <td><input type="email" name="email" value="${loggedmember.email}"/></td>
                 </tr>
                 <tr>
                     <td>Adresse : </td>

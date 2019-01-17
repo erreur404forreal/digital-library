@@ -7,7 +7,7 @@ import javax.persistence.*;
 public class Book {
 
     @Id
-    private String bookId;
+    private Integer bookId;
     private boolean isAvailable;
     @ManyToOne
     private Work work;
@@ -17,18 +17,19 @@ public class Book {
     public Book(){
 
     }
-    public Book(String bookId, boolean isAvailable, Work work, Borrowing borrowing) {
+
+    public Book(Integer bookId, boolean isAvailable, Work work, Borrowing borrowing) {
         this.bookId = bookId;
         this.isAvailable = isAvailable;
         this.work = work;
         this.borrowing = borrowing;
     }
 
-    public String getBookId() {
+    public Integer getBookId() {
         return bookId;
     }
 
-    public void setBookId(String bookId) {
+    public void setBookId(Integer bookId) {
         this.bookId = bookId;
     }
 

@@ -2,6 +2,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
+  <!-- Inherit defaults from Spring Boot -->
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>2.1.2.RELEASE</version>
+  </parent>
+
   <groupId>org.cereme</groupId>
   <artifactId>digital-library</artifactId>
   <version>1.0-SNAPSHOT</version>
@@ -17,6 +24,15 @@
     <maven.compiler.target>1.8</maven.compiler.target>
     <hibernate.version>5.2.3.Final</hibernate.version>
   </properties>
+
+  <modules>
+    <module>digital-library-webapp</module>
+    <module>digital-library_batch</module>
+    <module>digital-library-model</module>
+    <module>digital-library-business</module>
+    <module>digital-library-consumer</module>
+    <module>webserviceproducer</module>
+  </modules>
 
   <dependencyManagement>
   <dependencies>
@@ -150,6 +166,26 @@
     </dependency>
 
 
+
+    <dependency>
+      <groupId>javax.xml.bind</groupId>
+      <artifactId>jaxb-api</artifactId>
+      <version>2.3.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.sun.xml.bind</groupId>
+      <artifactId>jaxb-core</artifactId>
+      <version>2.3.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.sun.xml.bind</groupId>
+      <artifactId>jaxb-impl</artifactId>
+      <version>2.3.0</version>
+    </dependency>
+
+
+
+
     <!-- modules -->
     <dependency>
       <groupId>org.cereme</groupId>
@@ -176,17 +212,18 @@
       <artifactId>digital-library_batch</artifactId>
       <version>1.0-SNAPSHOT</version>
     </dependency>
+    <dependency>
+      <groupId>org.cereme</groupId>
+      <artifactId>digital-library-webservice</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
+
+
   </dependencies>
   </dependencyManagement>
 
 
-  <modules>
-    <module>digital-library-webapp</module>
-    <module>digital-library_batch</module>
-    <module>digital-library-model</module>
-    <module>digital-library-business</module>
-    <module>digital-library-consumer</module>
-  </modules>
+
 
 
   <!-- BUILD -->

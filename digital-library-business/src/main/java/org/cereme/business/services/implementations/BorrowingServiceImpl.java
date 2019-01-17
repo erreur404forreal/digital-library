@@ -141,7 +141,7 @@ public class BorrowingServiceImpl implements BorrowingService {
 
 		for (Book book : books)
 		{
-			System.out.println(book.getBookId());
+
 			//Parcourir liste book de workGot
 			//pour chaque book
 			//si book Is Available

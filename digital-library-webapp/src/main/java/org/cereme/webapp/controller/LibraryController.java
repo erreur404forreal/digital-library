@@ -19,15 +19,8 @@ public class LibraryController {
    @Autowired
     LibraryService libraryService;
 	WorkService workService;
-	
-	 /*@RequestMapping(value="/")
-	    public String home() {
-	    	System.out.println("we are in librarycontroller");
-	    	return "library/home";
-	    }*/
 
-
-	@RequestMapping(value = "/", method = RequestMethod.GET)
+	@RequestMapping(value = "/home", method = RequestMethod.GET)
 	public ModelAndView home(){
 
 		ModelAndView modelAndView = new ModelAndView("member/login");
