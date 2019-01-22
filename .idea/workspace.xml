@@ -6,8 +6,35 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d87c3e9-fcf0-4029-9e98-943459e96244" name="Default Changelist" comment="creationdu premier webservice en cours">
+    <list default="true" id="6d87c3e9-fcf0-4029-9e98-943459e96244" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/digital_library_webapp_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/digital_library_webapp_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/webserviceproducer_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/webserviceproducer_war.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/webserviceproducer_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/webserviceproducer_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_persistence_persistence_api_1_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_9_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjrt_1_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_4_0_CR1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_5_4_0_CR1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_5_1_2_RELEASE.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/digital-library-business/digital-library-business.iml" beforeDir="false" afterPath="$PROJECT_DIR$/digital-library-business/digital-library-business.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/digital-library-consumer/digital-library-consumer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/digital-library-consumer/digital-library-consumer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/digital-library-consumer/src/main/java/org/cereme/consumer/repositories/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/digital-library-consumer/src/main/java/org/cereme/consumer/repositories/BookRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/digital-library-consumer/src/main/java/org/cereme/consumer/repositories/BorrowingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/digital-library-consumer/src/main/java/org/cereme/consumer/repositories/BorrowingRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/digital-library-consumer/src/main/java/org/cereme/consumer/repositories/LibraryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/digital-library-consumer/src/main/java/org/cereme/consumer/repositories/LibraryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/digital-library-consumer/src/main/java/org/cereme/consumer/repositories/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/digital-library-consumer/src/main/java/org/cereme/consumer/repositories/MemberRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/digital-library-consumer/src/main/java/org/cereme/consumer/repositories/WorkRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/digital-library-consumer/src/main/java/org/cereme/consumer/repositories/WorkRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/digital-library-model/digital-library-model.iml" beforeDir="false" afterPath="$PROJECT_DIR$/digital-library-model/digital-library-model.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/digital-library-model/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/digital-library-model/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/digital-library-webapp/digital-library-webapp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/digital-library-webapp/digital-library-webapp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/digital-library_batch/digital-library_batch.iml" beforeDir="false" afterPath="$PROJECT_DIR$/digital-library_batch/digital-library_batch.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webserviceproducer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/webserviceproducer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webserviceproducer/src/main/java/fr/villedenice/bibliotheque/webservice/SpringApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/webserviceproducer/src/main/java/fr/villedenice/bibliotheque/webservice/SpringApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webserviceproducer/src/main/java/fr/villedenice/bibliotheque/webservice/endpoint/WorkEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/webserviceproducer/src/main/java/fr/villedenice/bibliotheque/webservice/endpoint/WorkEndpoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webserviceproducer/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/webserviceproducer/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webserviceproducer/webserviceproducer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/webserviceproducer/webserviceproducer.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/digital-library-consumer/target/" />
     <ignored path="$PROJECT_DIR$/digital-library-business/target/" />
@@ -42,81 +69,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/digital-library-business/src/main/java/org/cereme/business/services/contracts/BookService.java">
+        <entry file="file://$PROJECT_DIR$/webserviceproducer/src/main/java/fr/villedenice/bibliotheque/webservice/SpringApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="186" lean-forward="true" selection-start-line="186" selection-end-line="186" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/digital-library-model/src/main/java/org/cereme/model/Book.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
-              <folding>
-                <element signature="e#573#574#0" expanded="true" />
-                <element signature="e#618#619#0" expanded="true" />
-                <element signature="e#654#655#0" expanded="true" />
-                <element signature="e#690#691#0" expanded="true" />
-                <element signature="e#724#725#0" expanded="true" />
-                <element signature="e#775#776#0" expanded="true" />
-                <element signature="e#814#815#0" expanded="true" />
-                <element signature="e#843#844#0" expanded="true" />
-                <element signature="e#870#871#0" expanded="true" />
-                <element signature="e#908#909#0" expanded="true" />
-                <element signature="e#940#941#0" expanded="true" />
-                <element signature="e#979#980#0" expanded="true" />
-                <element signature="e#1011#1012#0" expanded="true" />
-                <element signature="e#1064#1065#0" expanded="true" />
-                <element signature="e#1106#1107#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/digital-library-webapp/src/main/java/org/cereme/webapp/controller/BookController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webserviceproducer/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1360">
-              <caret line="80" column="4" selection-start-line="80" selection-start-column="4" selection-end-line="80" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/digital-library-business/src/main/java/org/cereme/business/services/contracts/BorrowingService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="24" column="5" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webserviceproducer/src/main/java/fr/villedenice/bibliotheque/webservice/endpoint/WorkEndpoint.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1309">
-              <caret line="92" column="5" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
+            <state relative-caret-position="119">
+              <caret line="7" selection-start-line="7" selection-end-line="16" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -125,28 +81,84 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/digital-library-business/src/main/java/org/cereme/business/services/contracts/WorkService.java">
+        <entry file="file://$PROJECT_DIR$/digital-library-consumer/src/main/java/org/cereme/consumer/repositories/BookRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="17" column="19" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/digital-library-webapp/src/main/webapp/WEB-INF/library-servlet.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="61" column="57" selection-start-line="61" selection-start-column="57" selection-end-line="61" selection-end-column="57" />
+            <state relative-caret-position="136">
+              <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/digital-library-webapp/src/main/webapp/WEB-INF/web.xml">
+        <entry file="file://$PROJECT_DIR$/digital-library-consumer/src/main/java/org/cereme/consumer/repositories/BorrowingRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="68">
+              <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-289">
+              <caret line="86" selection-start-line="86" selection-end-line="86" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webserviceproducer/src/main/java/fr/villedenice/bibliotheque/webservice/endpoint/WorkEndpoint.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="675">
+              <caret line="58" column="2" selection-start-line="58" selection-start-column="2" selection-end-line="58" selection-end-column="2" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3536#3537#0" expanded="true" />
+                <element signature="e#3623#3624#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webserviceproducer/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-991">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webserviceproducer/src/main/java/fr/villedenice/bibliotheque/webservice/config/WSConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="14" selection-start-line="14" selection-end-line="14" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webserviceproducer/src/main/resources/xsds/work.xsd">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="85" selection-start-column="85" selection-end-column="85" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/webserviceproducer/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="153" selection-start-column="153" selection-end-column="153" />
             </state>
           </provider>
         </entry>
@@ -179,6 +191,8 @@
       <find>org.glass</find>
       <find>org.</find>
       <find>jaxb2-maven</find>
+      <find>core</find>
+      <find>maven</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -192,8 +206,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/digital-library-business/src/main/java/org/cereme/business/services/implementations/WorksServiceImpl.java" />
-        <option value="$PROJECT_DIR$/digital-library-webapp/src/main/java/org/cereme/webapp/controller/WorksController.java" />
         <option value="$PROJECT_DIR$/digital-library-webapp/src/main/webapp/jsp/works/searchwork.jsp" />
         <option value="$PROJECT_DIR$/digital-library-webapp/src/main/webapp/jsp/member/registration.jsp" />
         <option value="$PROJECT_DIR$/digital-library-webapp/src/main/webapp/jsp/_include/footer.jsp" />
@@ -202,15 +214,12 @@
         <option value="$PROJECT_DIR$/digital-library-model/src/main/java/org/cereme/model/Member.java" />
         <option value="$PROJECT_DIR$/digital-library-webapp/src/main/webapp/jsp/work/work-detail.jsp" />
         <option value="$PROJECT_DIR$/digital-library-webapp/src/main/webapp/jsp/work/searchwork.jsp" />
-        <option value="$PROJECT_DIR$/digital-library-consumer/src/main/java/org/cereme/consumer/repositories/MemberRepository.java" />
         <option value="$PROJECT_DIR$/digital-library-webapp/src/main/webapp/jsp/library/errorpage.jsp" />
         <option value="$PROJECT_DIR$/digital-library-webapp/src/main/java/org/cereme/webapp/controller/LibraryController.java" />
         <option value="$PROJECT_DIR$/digital-library-business/src/main/java/org/cereme/business/services/contracts/WorkService.java" />
-        <option value="$PROJECT_DIR$/digital-library-consumer/src/main/java/org/cereme/consumer/repositories/WorkRepository.java" />
         <option value="$PROJECT_DIR$/digital-library-business/src/main/java/org/cereme/business/services/implementations/WorkServiceImpl.java" />
         <option value="$PROJECT_DIR$/digital-library-model/src/main/java/org/cereme/model/Borrowing.java" />
         <option value="$PROJECT_DIR$/digital-library-model/src/main/java/org/cereme/model/Work.java" />
-        <option value="$PROJECT_DIR$/digital-library-consumer/src/main/java/org/cereme/consumer/repositories/BorrowingRepository.java" />
         <option value="$PROJECT_DIR$/digital-library-webapp/src/main/webapp/jsp/library/home.jsp" />
         <option value="$PROJECT_DIR$/digital-library-webapp/src/main/webapp/jsp/_include/header.jsp" />
         <option value="$PROJECT_DIR$/digital-library-webapp/src/main/webapp/jsp/work/searchedwork.jsp" />
@@ -229,20 +238,25 @@
         <option value="$PROJECT_DIR$/digital-library-business/src/main/java/org/cereme/business/services/contracts/MemberService.java" />
         <option value="$PROJECT_DIR$/digital-library-webapp/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/digital-library-webapp/src/main/java/org/cereme/webapp/controller/MemberController.java" />
-        <option value="$PROJECT_DIR$/webserviceproducer/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/webserviceproducer/src/main/resources/xsds/work.xsd" />
-        <option value="$PROJECT_DIR$/webserviceproducer/src/main/java/fr/villedenice/bibliotheque/webservice/config/WSConfig.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/digital-library-business/src/main/java/org/cereme/business/services/implementations/BorrowingServiceImpl.java" />
         <option value="$PROJECT_DIR$/digital-library-model/src/main/java/org/cereme/model/Book.java" />
-        <option value="$PROJECT_DIR$/digital-library-consumer/src/main/java/org/cereme/consumer/repositories/BookRepository.java" />
         <option value="$PROJECT_DIR$/digital-library-business/src/main/java/org/cereme/business/services/implementations/BookServiceImpl.java" />
         <option value="$PROJECT_DIR$/digital-library-business/src/main/java/org/cereme/business/services/contracts/BookService.java" />
         <option value="$PROJECT_DIR$/digital-library-webapp/src/main/java/org/cereme/webapp/controller/BookController.java" />
-        <option value="$PROJECT_DIR$/webserviceproducer/pom.xml" />
-        <option value="$PROJECT_DIR$/webserviceproducer/src/main/java/fr/villedenice/bibliotheque/webservice/endpoint/WorkEndpoint.java" />
-        <option value="$PROJECT_DIR$/webserviceproducer/src/main/java/fr/villedenice/bibliotheque/webservice/SpringApp.java" />
         <option value="$PROJECT_DIR$/digital-library-webapp/src/main/webapp/WEB-INF/library-servlet.xml" />
+        <option value="$PROJECT_DIR$/digital-library-model/pom.xml" />
+        <option value="$PROJECT_DIR$/webserviceproducer/src/main/java/fr/villedenice/bibliotheque/webservice/config/WSConfig.java" />
+        <option value="$PROJECT_DIR$/webserviceproducer/src/main/java/fr/villedenice/bibliotheque/webservice/endpoint/WorkEndpoint.java" />
+        <option value="$PROJECT_DIR$/digital-library-consumer/src/main/java/org/cereme/consumer/repositories/BookRepository.java" />
+        <option value="$PROJECT_DIR$/digital-library-consumer/src/main/java/org/cereme/consumer/repositories/BorrowingRepository.java" />
+        <option value="$PROJECT_DIR$/digital-library-consumer/src/main/java/org/cereme/consumer/repositories/LibraryRepository.java" />
+        <option value="$PROJECT_DIR$/digital-library-consumer/src/main/java/org/cereme/consumer/repositories/MemberRepository.java" />
+        <option value="$PROJECT_DIR$/digital-library-consumer/src/main/java/org/cereme/consumer/repositories/WorkRepository.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/webserviceproducer/src/main/java/fr/villedenice/bibliotheque/webservice/SpringApp.java" />
+        <option value="$PROJECT_DIR$/webserviceproducer/pom.xml" />
+        <option value="$PROJECT_DIR$/webserviceproducer/src/main/resources/application.properties" />
       </list>
     </option>
   </component>
@@ -282,6 +296,15 @@
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="digital-library-model" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="digital-library-model" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="WebServiceProducer" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
@@ -312,41 +335,6 @@
             <path>
               <item name="digital-library" type="b2602c69:ProjectViewProjectNode" />
               <item name="digital-library" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="digital-library" type="b2602c69:ProjectViewProjectNode" />
-              <item name="digital-library" type="462c0819:PsiDirectoryNode" />
-              <item name="digital-library-business" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="digital-library" type="b2602c69:ProjectViewProjectNode" />
-              <item name="digital-library" type="462c0819:PsiDirectoryNode" />
-              <item name="digital-library-business" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="digital-library" type="b2602c69:ProjectViewProjectNode" />
-              <item name="digital-library" type="462c0819:PsiDirectoryNode" />
-              <item name="digital-library-business" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="digital-library" type="b2602c69:ProjectViewProjectNode" />
-              <item name="digital-library" type="462c0819:PsiDirectoryNode" />
-              <item name="digital-library-business" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="digital-library" type="b2602c69:ProjectViewProjectNode" />
-              <item name="digital-library" type="462c0819:PsiDirectoryNode" />
-              <item name="digital-library-business" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="digital-library" type="b2602c69:ProjectViewProjectNode" />
@@ -386,76 +374,6 @@
             <path>
               <item name="digital-library" type="b2602c69:ProjectViewProjectNode" />
               <item name="digital-library" type="462c0819:PsiDirectoryNode" />
-              <item name="digital-library-model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="digital-library" type="b2602c69:ProjectViewProjectNode" />
-              <item name="digital-library" type="462c0819:PsiDirectoryNode" />
-              <item name="digital-library-model" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="digital-library" type="b2602c69:ProjectViewProjectNode" />
-              <item name="digital-library" type="462c0819:PsiDirectoryNode" />
-              <item name="digital-library-model" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="digital-library" type="b2602c69:ProjectViewProjectNode" />
-              <item name="digital-library" type="462c0819:PsiDirectoryNode" />
-              <item name="digital-library-model" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="digital-library" type="b2602c69:ProjectViewProjectNode" />
-              <item name="digital-library" type="462c0819:PsiDirectoryNode" />
-              <item name="digital-library-model" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="digital-library" type="b2602c69:ProjectViewProjectNode" />
-              <item name="digital-library" type="462c0819:PsiDirectoryNode" />
-              <item name="digital-library-webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="digital-library" type="b2602c69:ProjectViewProjectNode" />
-              <item name="digital-library" type="462c0819:PsiDirectoryNode" />
-              <item name="digital-library-webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="digital-library" type="b2602c69:ProjectViewProjectNode" />
-              <item name="digital-library" type="462c0819:PsiDirectoryNode" />
-              <item name="digital-library-webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="digital-library" type="b2602c69:ProjectViewProjectNode" />
-              <item name="digital-library" type="462c0819:PsiDirectoryNode" />
-              <item name="digital-library-webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="digital-library" type="b2602c69:ProjectViewProjectNode" />
-              <item name="digital-library" type="462c0819:PsiDirectoryNode" />
-              <item name="digital-library-webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="digital-library" type="b2602c69:ProjectViewProjectNode" />
-              <item name="digital-library" type="462c0819:PsiDirectoryNode" />
               <item name="webserviceproducer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -487,6 +405,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="webservice" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="digital-library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="digital-library" type="462c0819:PsiDirectoryNode" />
+              <item name="webserviceproducer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="webservice" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="digital-library" type="b2602c69:ProjectViewProjectNode" />
@@ -498,12 +426,20 @@
               <item name="webservice" type="462c0819:PsiDirectoryNode" />
               <item name="endpoint" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="digital-library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="digital-library" type="462c0819:PsiDirectoryNode" />
+              <item name="webserviceproducer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -513,7 +449,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547764179082" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548154616693" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -523,9 +459,8 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\jcereme\Documents\env\digital-library\digital-library-webapp\src\main\webapp\jsp" />
-      <recent name="C:\Users\jcereme\Documents\env\digital-library\digital-library-business\src\main\java\org\cereme\business" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.cereme.business.services" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\jcereme\Documents\env\digital-library\digital-library-webapp\src\main\webapp\jsp\borrowing" />
@@ -534,8 +469,9 @@
       <recent name="C:\Users\jcereme\Documents\env\digital-library\digital-library-webapp\src\main" />
       <recent name="C:\Users\jcereme\Documents\env\digital-library\digital-library-business\src\main\java\org\cereme\business\services\implementations\contract\impl" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="org.cereme.business.services" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jcereme\Documents\env\digital-library\digital-library-webapp\src\main\webapp\jsp" />
+      <recent name="C:\Users\jcereme\Documents\env\digital-library\digital-library-business\src\main\java\org\cereme\business" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -550,7 +486,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat">
+  <component name="RunManager" selected="Spring Boot.SpringApp">
     <configuration name="All Features in: webserviceproducer" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="3" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/webserviceproducer" />
@@ -784,7 +720,9 @@
       <workItem from="1547715638071" duration="106000" />
       <workItem from="1547716017218" duration="13464000" />
       <workItem from="1547764503145" duration="988000" />
-      <workItem from="1548063116165" duration="1230000" />
+      <workItem from="1548063116165" duration="5934000" />
+      <workItem from="1548095321396" duration="6166000" />
+      <workItem from="1548148038594" duration="6095000" />
     </task>
     <task id="LOCAL-00001" summary="possibility to hand over the books added, jsps modifications...">
       <created>1545751457878</created>
@@ -800,7 +738,14 @@
       <option name="project" value="LOCAL" />
       <updated>1547734406997</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Modification du modèle(bookId). Passage en mode update.">
+      <created>1548065714679</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1548065714679</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -809,7 +754,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="335595000" />
+    <option name="totallyTimeSpent" value="352560000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -824,7 +769,7 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.498708" visible="true" weight="0.3222672" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.498708" visible="true" weight="0.25587043" />
       <window_info id="Structure" order="1" sideWeight="0.501292" side_tool="true" weight="0.15222672" />
       <window_info id="Web" order="2" side_tool="true" weight="0.3290461" />
       <window_info id="Image Layers" order="3" />
@@ -832,10 +777,10 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="0" sideWeight="0.48359072" weight="0.2153025" />
+      <window_info anchor="bottom" id="Messages" order="0" sideWeight="0.48359072" weight="0.26820603" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49716598" weight="0.22557727" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49149796" visible="true" weight="0.26642984" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.49149796" visible="true" weight="0.8241563" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -860,7 +805,7 @@
       <window_info anchor="right" id="Maven Projects" order="8" visible="true" weight="0.19271255" />
       <window_info anchor="right" id="CDI" order="9" />
       <window_info anchor="right" id="Bean Validation" order="10" weight="0.32874495" />
-      <window_info anchor="right" id="Maven" order="11" visible="true" weight="0.16194332" />
+      <window_info anchor="right" id="Maven" order="11" weight="0.2145749" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.498708" visible="true" weight="0.25263157" />
@@ -907,27 +852,14 @@
     <MESSAGE value="possibility to hand over the books added, jsps modifications..." />
     <MESSAGE value="creationdu premier webservice en cours" />
     <MESSAGE value="creation du premier webservice en cours" />
-    <option name="LAST_COMMIT_MESSAGE" value="creation du premier webservice en cours" />
+    <MESSAGE value="Modification du modèle(bookId). Passage en mode update." />
+    <option name="LAST_COMMIT_MESSAGE" value="Modification du modèle(bookId). Passage en mode update." />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/digital-library-webapp/src/main/webapp/jsp/work/searchedwork.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="41" selection-start-line="41" selection-end-line="53" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/digital-library-webapp/src/main/java/org/cereme/webapp/controller/WorkController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/digital-library-webapp/src/main/webapp/jsp/library/errorpage.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="284">
@@ -948,13 +880,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="22" column="49" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/digital-library-consumer/src/main/java/org/cereme/consumer/repositories/BorrowingRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="18" column="56" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
         </state>
       </provider>
     </entry>
@@ -983,13 +908,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
           <caret line="60" column="91" selection-start-line="60" selection-start-column="91" selection-end-line="60" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/digital-library-consumer/src/main/java/org/cereme/consumer/repositories/MemberRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
@@ -1072,17 +990,7 @@
     <entry file="file://$PROJECT_DIR$/digital-library-webapp/src/main/resources/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/digital-library-business/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/../maven/apache-maven-3.6.0/~/.m2/settings.xml" />
-    <entry file="file://$PROJECT_DIR$/digital-library-model/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="11" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/digital-library-webapp/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -1091,111 +999,15 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webserviceproducer/target/classes/xsds/work.xsd" />
-    <entry file="file://$PROJECT_DIR$/webserviceproducer/src/main/resources/xsds/work.xsd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="85" selection-start-column="85" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webserviceproducer/webserviceproducer.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1227" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webserviceproducer/src/main/java/fr/villedenice/bibliotheque/webservice/config/WSConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webserviceproducer/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="8" selection-end-column="61" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/digital-library-business/src/main/java/org/cereme/business/services/implementations/BorrowingServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="257">
           <caret line="143" selection-start-line="143" selection-end-line="143" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/digital-library-consumer/src/main/java/org/cereme/consumer/repositories/BookRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="68" selection-start-line="7" selection-start-column="68" selection-end-line="7" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/digital-library-business/src/main/java/org/cereme/business/services/implementations/BookServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webserviceproducer/src/main/java/fr/villedenice/bibliotheque/webservice/SpringApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/digital-library-business/src/main/java/org/cereme/business/services/contracts/BookService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/digital-library-webapp/src/main/java/org/cereme/webapp/controller/BookController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webserviceproducer/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="80" column="4" selection-start-line="80" selection-start-column="4" selection-end-line="80" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/digital-library-business/src/main/java/org/cereme/business/services/contracts/BorrowingService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="24" column="5" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webserviceproducer/src/main/java/fr/villedenice/bibliotheque/webservice/endpoint/WorkEndpoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1309">
-          <caret line="92" column="5" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/digital-library-business/src/main/java/org/cereme/business/services/contracts/WorkService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" column="19" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="55" />
         </state>
       </provider>
     </entry>
@@ -1206,10 +1018,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/digital-library-webapp/src/main/webapp/WEB-INF/library-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="186" lean-forward="true" selection-start-line="186" selection-end-line="186" />
+        <state relative-caret-position="450">
+          <caret line="61" column="57" selection-start-line="61" selection-start-column="57" selection-end-line="61" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-business/src/main/java/org/cereme/business/services/contracts/WorkService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="17" column="19" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-business/src/main/java/org/cereme/business/services/contracts/BorrowingService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-webapp/src/main/java/org/cereme/webapp/controller/BookController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
@@ -1237,10 +1070,132 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/digital-library-webapp/src/main/webapp/WEB-INF/library-servlet.xml">
+    <entry file="file://$PROJECT_DIR$/digital-library-business/src/main/java/org/cereme/business/services/contracts/BookService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="61" column="57" selection-start-line="61" selection-start-column="57" selection-end-line="61" selection-end-column="57" />
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-business/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" selection-start-column="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-model/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="39" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-business/src/main/java/org/cereme/business/services/implementations/BookServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webserviceproducer/src/main/resources/xsds/work.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="85" selection-start-column="85" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webserviceproducer/src/main/java/fr/villedenice/bibliotheque/webservice/config/WSConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="14" selection-start-line="14" selection-end-line="14" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webserviceproducer/src/main/java/fr/villedenice/bibliotheque/webservice/endpoint/WorkEndpoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="58" column="2" selection-start-line="58" selection-start-column="2" selection-end-line="58" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3536#3537#0" expanded="true" />
+            <element signature="e#3623#3624#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-consumer/src/main/java/org/cereme/consumer/repositories/BookRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-consumer/src/main/java/org/cereme/consumer/repositories/WorkRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-consumer/src/main/java/org/cereme/consumer/repositories/MemberRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-consumer/src/main/java/org/cereme/consumer/repositories/LibraryRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital-library-consumer/src/main/java/org/cereme/consumer/repositories/BorrowingRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-289">
+          <caret line="86" selection-start-line="86" selection-end-line="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webserviceproducer/src/main/java/fr/villedenice/bibliotheque/webservice/SpringApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="16" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webserviceproducer/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-991">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webserviceproducer/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="153" selection-start-column="153" selection-end-column="153" />
         </state>
       </provider>
     </entry>

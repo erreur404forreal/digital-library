@@ -1,9 +1,11 @@
 package fr.villedenice.bibliotheque.webservice.endpoint;
 
 import org.cereme.business.services.contracts.WorkService;
+import org.cereme.model.Work;
 import org.cereme.ws.GetWorkByAuthorRequest;
 import org.cereme.ws.GetWorkByAuthorResponse;
 import org.cereme.ws.WorkInfo;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.context.support.SpringBeanAutowiringSupport;
 import org.springframework.ws.server.endpoint.annotation.Endpoint;
@@ -29,13 +31,13 @@ public class WorkEndpoint {
 		GetWorkByAuthorResponse response = new GetWorkByAuthorResponse();
 		List<WorkInfo> workInfoListByAuthor = new ArrayList<>();
 
-//		List<Work> workList = workService.findWorksByAuthorContain(request.getAuthor());
-//		for (int i = 0; i < workList.size(); i++) {
-//			WorkInfo ob = new WorkInfo();
-//			BeanUtils.copyProperties(workList.get(i), ob);
-//			workInfoListByAuthor.add(ob);
-//		}
-//		response.getWorkInfo().addAll(workInfoListByAuthor);
+		List<Work> workList = workService.findWorkByAuthor(request.getAuthor());
+		for (int i = 0; i < workList.size(); i++) {
+			WorkInfo ob = new WorkInfo();
+			BeanUtils.copyProperties(workList.get(i), ob);
+			workInfoListByAuthor.add(ob);
+		}
+		response.getWorkInfo().addAll(workInfoListByAuthor);
 
 		return response;
 	}

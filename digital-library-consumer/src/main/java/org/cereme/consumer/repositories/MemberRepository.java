@@ -3,9 +3,11 @@ package org.cereme.consumer.repositories;
 import org.cereme.model.Borrowing;
 import org.cereme.model.Member;
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+@Repository
 public interface MemberRepository extends CrudRepository<Member,Integer> {
 
 	Member findByLastName(String lastname);

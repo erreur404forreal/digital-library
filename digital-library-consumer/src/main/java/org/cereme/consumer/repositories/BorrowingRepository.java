@@ -4,10 +4,12 @@ import org.cereme.model.Book;
 import org.cereme.model.Borrowing;
 import org.cereme.model.Member;
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.Date;
 import java.util.List;
 
+@Repository
 public interface BorrowingRepository extends CrudRepository<Borrowing, Integer> {
 
 

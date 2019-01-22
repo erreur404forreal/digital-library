@@ -8,7 +8,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
 @ComponentScan(basePackages = { "org.cereme"})
-@EnableJpaRepositories(basePackages = { "org.cereme"})
+@EnableJpaRepositories(basePackages = { "org.cereme.consumer"})
 @EntityScan(basePackages = { "org.cereme" })
 public class SpringApp {
 	public static void main(String[] args) {

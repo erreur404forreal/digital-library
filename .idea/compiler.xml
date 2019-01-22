@@ -26,11 +26,11 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="digital-library-business" options="-parameters" />
-      <module name="digital-library-consumer" options="-parameters" />
-      <module name="digital-library-model" options="-parameters" />
-      <module name="digital-library-webapp" options="-parameters" />
-      <module name="digital-library_batch" options="-parameters" />
+      <module name="digital-library-business" options="" />
+      <module name="digital-library-consumer" options="" />
+      <module name="digital-library-model" options="" />
+      <module name="digital-library-webapp" options="" />
+      <module name="digital-library_batch" options="" />
       <module name="webserviceproducer" options="-parameters" />
     </option>
   </component>
