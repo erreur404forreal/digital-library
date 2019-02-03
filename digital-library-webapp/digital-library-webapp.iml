@@ -23,6 +23,15 @@
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
+    <content url="file://$MODULE_DIR$/../digital-library-webservice/src/main/digital-library-webservice">
+      <sourceFolder url="file://$MODULE_DIR$/../digital-library-webservice/src/main/digital-library-webservice" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../digital-library-webservice/target/generated-sources/wsdl">
+      <sourceFolder url="file://$MODULE_DIR$/../digital-library-webservice/target/generated-sources/wsdl" isTestSource="false" generated="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../digital-library-webservice/target/generated-sources/wsgen">
+      <sourceFolder url="file://$MODULE_DIR$/../digital-library-webservice/target/generated-sources/wsgen" isTestSource="false" generated="true" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="digital-library-model" />

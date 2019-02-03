@@ -7,9 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="digital-library-business" />
+        <module name="digital-library-client-ws" />
         <module name="digital-library-consumer" />
         <module name="digital-library-model" />
         <module name="digital-library-webapp" />
+        <module name="digital-library-webservice" />
         <module name="digital-library_batch" />
         <module name="webserviceproducer" />
       </profile>
@@ -17,9 +19,11 @@
     <bytecodeTargetLevel>
       <module name="digital-library" target="1.8" />
       <module name="digital-library-business" target="1.8" />
+      <module name="digital-library-client-ws" target="1.8" />
       <module name="digital-library-consumer" target="1.8" />
       <module name="digital-library-model" target="1.8" />
       <module name="digital-library-webapp" target="1.8" />
+      <module name="digital-library-webservice" target="1.8" />
       <module name="digital-library_batch" target="1.8" />
       <module name="webserviceproducer" target="1.8" />
     </bytecodeTargetLevel>
