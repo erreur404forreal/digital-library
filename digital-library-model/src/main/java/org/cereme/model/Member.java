@@ -14,7 +14,7 @@ public class Member extends User{
     private String address;
     @OneToMany
     private List<Borrowing> borrowing;
-    //private String phoneNumber;
+
 
 
     public Member(String username, String password, String firstName, String lastName, String email, String address, List<Borrowing> borrowing) {

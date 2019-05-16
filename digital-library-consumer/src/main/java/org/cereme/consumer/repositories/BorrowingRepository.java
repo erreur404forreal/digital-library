@@ -20,6 +20,5 @@ public interface BorrowingRepository extends CrudRepository<Borrowing, Integer> 
 	List<Borrowing> findByStatus(String status);
 	Borrowing findBorrowingByIdborrow(Integer idborrow);
 
-	//boolean findBo
 	
 }

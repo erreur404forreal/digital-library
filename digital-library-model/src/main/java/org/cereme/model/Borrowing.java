@@ -1,7 +1,7 @@
 package org.cereme.model;
 
 import javax.persistence.*;
-import java.time.LocalDate;
+import java.util.Date;
 
 @Entity
 @Table(name="Borrowing")
@@ -14,23 +14,33 @@ public class Borrowing {
     private Member member;
     @OneToOne
     private Book book;
-    private LocalDate issueDate;
-    private LocalDate returnDate;
+    private Date issueDate;
+    private Date returnDate;
     private String status;
     private boolean isExtended;
+    private String Titleofbook;
 
 
     public Borrowing(){
 
     }
 
-    public Borrowing(Member member, Book book, LocalDate issueDate, LocalDate returnDate, String status, boolean isExtended) {
+    public String getTitleofbook() {
+        return Titleofbook;
+    }
+
+    public void setTitleofbook(String titleofbook) {
+        Titleofbook = titleofbook;
+    }
+
+    public Borrowing(Member member, Book book, Date issueDate, Date returnDate, String status, boolean isExtended, String titleofbook) {
         this.member = member;
         this.book = book;
         this.issueDate = issueDate;
         this.returnDate = returnDate;
         this.status = status;
         this.isExtended = isExtended;
+        Titleofbook = titleofbook;
     }
 
     public Integer getIdborrow() {
@@ -65,19 +75,19 @@ public class Borrowing {
         this.book = book;
     }
 
-    public LocalDate getIssueDate() {
+    public Date getIssueDate() {
         return issueDate;
     }
 
-    public void setIssueDate(LocalDate issueDate) {
+    public void setIssueDate(Date issueDate) {
         this.issueDate = issueDate;
     }
 
-    public LocalDate getReturnDate() {
+    public Date getReturnDate() {
         return returnDate;
     }
 
-    public void setReturnDate(LocalDate returnDate) {
+    public void setReturnDate(Date returnDate) {
         this.returnDate = returnDate;
     }
 

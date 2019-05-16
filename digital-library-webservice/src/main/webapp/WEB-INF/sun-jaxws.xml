@@ -1,0 +1,17 @@
+<endpoints xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime"
+		   version="2.0">
+	<endpoint name="workWeb" implementation="org.cereme.webservice.WorkWs"
+			  url-pattern="/ws/workWs" />
+
+	<endpoint name="bookWeb" implementation="org.cereme.webservice.BookWs"
+			  url-pattern="/ws/bookWs" />
+
+	<endpoint name="memberWeb" implementation="org.cereme.webservice.MemberWs"
+			  url-pattern="/ws/memberWs" />
+
+	<endpoint name="borrowingWeb" implementation="org.cereme.webservice.BorrowingWs"
+			  url-pattern="/ws/borrowingWs" />
+
+	<endpoint name="libraryWeb" implementation="org.cereme.webservice.LibraryWs"
+			  url-pattern="/ws/libraryWs" />
+</endpoints>

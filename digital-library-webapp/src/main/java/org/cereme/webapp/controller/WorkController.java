@@ -1,8 +1,6 @@
 package org.cereme.webapp.controller;
 
-import org.cereme.business.services.contracts.WorkService;
-import org.cereme.model.Work;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.cereme.digital.library.clientws.*;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.DispatcherServlet;
@@ -11,11 +9,14 @@ import org.springframework.web.servlet.ModelAndView;
 import java.io.IOException;
 import java.util.List;
 
+
+
 @Controller
 public class WorkController {
 
-	@Autowired
-	WorkService workService;
+	/*@Autowired
+	WorkService workService;*/
+
 
 
 	@RequestMapping(value = "/searchwork", method = RequestMethod.GET)
@@ -30,8 +31,13 @@ public class WorkController {
 	@RequestMapping(value = "/work/workinformations/{worksId}", method = RequestMethod.GET)
 	public ModelAndView ViewworkInfo(@PathVariable Integer worksId) {
 
+		WorkWeb workWeb = new WorkWeb();
+		WorkWs workWs = workWeb.getWorkWsPort();
+		//workWs.init();
+
 		ModelAndView modelAndView = new ModelAndView("work/workinformations");
-		Work work = workService.findWorksById(worksId);
+		//Work work = workService.findWorksById(worksId);
+		org.cereme.digital.library.clientws.Work work = workWs.findWorksById(worksId);
 		modelAndView.addObject("work", work);
 
 
@@ -42,10 +48,15 @@ public class WorkController {
 
 	@RequestMapping(value = "/library/author/{author}", method = RequestMethod.GET)
 	public @ResponseBody
-    List<Work> getWorkByAuthor(@PathVariable String author) {
+    List<org.cereme.digital.library.clientws.Work> getWorkByAuthor(@PathVariable String author) {
 
-		List<Work> workList = workService.findWorkByAuthor(author);
-		for(Work work : workList)
+		WorkWeb workWeb = new WorkWeb();
+		WorkWs workWs = workWeb.getWorkWsPort();
+		//workWs.init();
+
+		//List<Work> workList = workService.findWorkByAuthor(author);
+		List<org.cereme.digital.library.clientws.Work> workList = workWs.findWorkByAuthor(author);
+		for(org.cereme.digital.library.clientws.Work work : workList)
 		{
 			System.out.println("Titre : " + work.getTitle());
 			System.out.println("Auteur : " + work.getAuthor());
@@ -63,7 +74,13 @@ public class WorkController {
 	@RequestMapping(value = "/work/search", method = RequestMethod.GET)
 	public ModelAndView searchbyauthorlikeafter(@RequestParam("author") String author, @RequestParam("title") String title) {
 		System.out.println("searching by author");
-		List<Work> workList = workService.findWorkByAuthorContainsAndTitleContains(author,title);
+
+
+		WorkWeb workWeb = new WorkWeb();
+		WorkWs workWs = workWeb.getWorkWsPort();
+		//workWs.init();
+		//List<Work> workList = workService.findWorkByAuthorContainsAndTitleContains(author,title);
+		List<org.cereme.digital.library.clientws.Work> workList = workWs.findWorkByAuthorContainsAndTitleContains(author,title);
 
 
 			ModelAndView modelAndView = new ModelAndView("work/searchedwork");
@@ -74,7 +91,7 @@ public class WorkController {
 	}
 
 
-	@RequestMapping(value = "/work/year", method = RequestMethod.GET)
+	/*@RequestMapping(value = "/work/year", method = RequestMethod.GET)
 	public ModelAndView searchbyyear(@PathVariable Integer publicationYear) {
 		boolean verification;
 		System.out.println("searching by year");
@@ -99,12 +116,7 @@ public class WorkController {
 		}
 
 		return modelAndView;
-	}
-
-
-
-
-
+	}*/
 
 
 }

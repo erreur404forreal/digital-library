@@ -1,19 +1,17 @@
 package org.cereme.business.services.implementations;
 
 
+import org.cereme.business.services.contracts.BorrowingService;
+import org.cereme.consumer.repositories.BookRepository;
+import org.cereme.consumer.repositories.BorrowingRepository;
 import org.cereme.consumer.repositories.WorkRepository;
 import org.cereme.model.Book;
 import org.cereme.model.Borrowing;
 import org.cereme.model.Member;
-import org.cereme.business.services.contracts.BorrowingService;
-import org.cereme.consumer.repositories.BookRepository;
-import org.cereme.consumer.repositories.BorrowingRepository;
 import org.cereme.model.Work;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDate;
-import java.time.temporal.ChronoUnit;
 import java.util.Date;
 import java.util.List;
 
@@ -150,13 +148,19 @@ public class BorrowingServiceImpl implements BorrowingService {
 				Borrowing borrowingToSave = new Borrowing();
 				borrowingToSave.setBook(book);
 				borrowingToSave.setMember(member);
-				borrowingToSave.setIssueDate(LocalDate.now());
+				//borrowingToSave.setIssueDate(LocalDate.now());
+				Date now = new java.util.Date();
+				borrowingToSave.setIssueDate(now);
 				//add 4 week to the Issue date
-				LocalDate next4Week = borrowingToSave.getIssueDate().plus(4, ChronoUnit.WEEKS);
+				//LocalDate next4Week = borrowingToSave.getIssueDate().plus(4, ChronoUnit.WEEKS);
+				Long date = (borrowingToSave.getIssueDate().getTime()) + (28 * 24 * 3600 * 1000) ;
+				Date next4Week = new Date(date);
 				borrowingToSave.setReturnDate(next4Week);
 
 				borrowingToSave.setStatus("En Cours");
+				borrowingToSave.getBook().setAvailable(false);
 				borrowingToSave.setExtended(false);
+				borrowingToSave.setTitleofbook(workGot.getTitle());
 				//save borrowToSave, mettre dans un variable borrowToReturn le resultat de save
 				borrowToReturn = borrowingRepository.save(borrowingToSave);
 				break;
@@ -172,7 +176,9 @@ public class BorrowingServiceImpl implements BorrowingService {
 	public Borrowing extendAborrowing(Integer idborrow){
 		Borrowing borrowToReturn = borrowingRepository.findBorrowingByIdborrow(idborrow);
 
-		LocalDate next4Week = borrowToReturn.getReturnDate().plus(4, ChronoUnit.WEEKS);
+		Long date = (borrowToReturn.getIssueDate().getTime()) + (28 * 24 * 3600 * 1000) ;
+		Date next4Week = new Date(date);
+		//LocalDate next4Week = borrowToReturn.getReturnDate().plus(4, ChronoUnit.WEEKS);
 		borrowToReturn.setReturnDate(next4Week);
 		borrowToReturn.setStatus("En Cours et Prolongé");
 
@@ -186,8 +192,11 @@ public class BorrowingServiceImpl implements BorrowingService {
 	public Borrowing endAborrowing(Integer idborrow){
 		Borrowing borrowToReturn = borrowingRepository.findBorrowingByIdborrow(idborrow);
 
-		borrowToReturn.setReturnDate(LocalDate.now());
+		Date now = new java.util.Date();
+		borrowToReturn.setIssueDate(now);
+		//borrowToReturn.setReturnDate(LocalDate.now());
 		borrowToReturn.setStatus("Prêt terminé");
+		borrowToReturn.getBook().setAvailable(true);
 		borrowToReturn = borrowingRepository.save(borrowToReturn);
 
 

@@ -9,8 +9,6 @@ public class Book {
     @Id
     private Integer bookId;
     private boolean isAvailable;
-    @ManyToOne
-    private Work work;
     @OneToOne
     private Borrowing borrowing;
 
@@ -18,10 +16,9 @@ public class Book {
 
     }
 
-    public Book(Integer bookId, boolean isAvailable, Work work, Borrowing borrowing) {
+    public Book(Integer bookId, boolean isAvailable, Borrowing borrowing) {
         this.bookId = bookId;
         this.isAvailable = isAvailable;
-        this.work = work;
         this.borrowing = borrowing;
     }
 
@@ -39,14 +36,6 @@ public class Book {
 
     public void setAvailable(boolean available) {
         isAvailable = available;
-    }
-
-    public Work getWork() {
-        return work;
-    }
-
-    public void setWork(Work work) {
-        this.work = work;
     }
 
     public Borrowing getBorrowing() {

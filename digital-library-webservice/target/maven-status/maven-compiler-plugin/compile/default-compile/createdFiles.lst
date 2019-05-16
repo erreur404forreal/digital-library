@@ -1,0 +1,5 @@
+org\cereme\webservice\LibraryWs.class
+org\cereme\webservice\MemberWs.class
+org\cereme\webservice\BookWs.class
+org\cereme\webservice\BorrowingWs.class
+org\cereme\webservice\WorkWs.class

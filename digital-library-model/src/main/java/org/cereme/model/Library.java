@@ -1,7 +1,9 @@
 package org.cereme.model;
 
-import javax.persistence.*;
-import java.util.List;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
 @Entity(name="Library")
 public class Library {
@@ -14,13 +16,13 @@ public class Library {
     private String libName;
     @Column
     private String city;
-    @OneToMany
-    private List<Work> works;
+    //@OneToMany(fetch = FetchType.EAGER)
+    //private List<Work> works;
 
-    public Library(String libName, String city, List<Work> works) {
+    public Library(String libName, String city) {
         this.libName = libName;
         this.city = city;
-        this.works = works;
+
     }
 
     public Library(){
@@ -51,11 +53,5 @@ public class Library {
         this.city = city;
     }
 
-    public List<Work> getWorks() {
-        return works;
-    }
 
-    public void setWorks(List<Work> works) {
-        this.works = works;
-    }
 }

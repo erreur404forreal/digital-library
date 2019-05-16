@@ -1,7 +1,8 @@
 package org.cereme.webapp.controller;
 
 import org.cereme.business.services.contracts.MemberService;
-import org.cereme.model.Member;
+import org.cereme.digital.library.clientws.MemberWeb;
+import org.cereme.digital.library.clientws.MemberWs;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -37,6 +38,9 @@ public class MemberController {
 
 	@RequestMapping(value = "/member/login", method = RequestMethod.POST)
 	public ModelAndView Login(HttpServletRequest request) {
+		MemberWeb memberWeb = new MemberWeb();
+		MemberWs memberWs = memberWeb.getMemberWsPort();
+		memberWs.init();
 		boolean result;
 
 		ModelAndView modelAndView = null;
@@ -44,14 +48,18 @@ public class MemberController {
 		String password = request.getParameter("password");
 		System.out.println("Identifiants " + username + " " + password);
 		if (username != null && password != null) {
-			result = memberService.isValidUser(username, password);
+			//result = memberService.isValidUser(username, password);
+			result = memberWs.isValidUser(username, password);
 			System.out.println(result);
 
 
 			if (result == true) {
 				modelAndView = new ModelAndView("member/profile");
-				Member memberlogged = memberService.findByUsername(username);
-				request.getSession().setAttribute("loggedin", true);
+				//Member memberlogged = memberService.findByUsername(username);
+				System.out.println("Step_1");
+				org.cereme.digital.library.clientws.Member memberlogged = memberWs.findByUsername(username);
+				System.out.println(username);
+						request.getSession().setAttribute("loggedin", true);
 				request.getSession().setAttribute("loggedmember", memberlogged);
 				modelAndView.addObject("loggedmember", memberlogged);
 			} else {
@@ -79,16 +87,21 @@ public class MemberController {
 
 	@RequestMapping(value = "/member/member/changements", method = RequestMethod.POST)
 	public ModelAndView changeinformations(HttpServletRequest request){
+		MemberWeb memberWeb = new MemberWeb();
+		MemberWs memberWs = memberWeb.getMemberWsPort();
+		//memberWs.init();
 
 		String username = request.getParameter("username");
 
 		String email = request.getParameter("email");
 		String address = request.getParameter("address");
 
-		Member memberlogged = memberService.findByUsername(username);
+		//Member memberlogged = memberService.findByUsername(username);
+		org.cereme.digital.library.clientws.Member memberlogged = memberWs.findByUsername(username);
 		memberlogged.setAddress(address);
 		memberlogged.setEmail(email);
-		memberService.updateMember(memberlogged);
+		//memberService.updateMember(memberlogged);
+		memberWs.updateMember(memberlogged);
 
 		ModelAndView modelAndView = new ModelAndView("member/profile");
         modelAndView.addObject("loggedmember", memberlogged);

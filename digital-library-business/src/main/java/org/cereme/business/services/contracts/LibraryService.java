@@ -1,13 +1,10 @@
 package org.cereme.business.services.contracts;
 
 import org.cereme.model.Library;
-import org.cereme.model.Work;
-
-import java.util.List;
 
 public interface LibraryService {
 
-	Library getByWorkList(Work work);
+	//Library getByWorkList(Work work);
 
 	/*Library getLibraryByName(String libraryName);*/
 
@@ -15,5 +12,7 @@ public interface LibraryService {
 	
 	Library getLibraryByCity(String city);
 
-	List<Work> findByLibraryId(int libraryid);
+	public boolean checkBorrowingsStatus();
+
+	//List<Work> findByLibraryId(int libraryid);
 }

@@ -2,6 +2,8 @@ package org.cereme.webapp.controller;
 
 import org.cereme.business.services.contracts.LibraryService;
 import org.cereme.business.services.contracts.WorkService;
+import org.cereme.digital.library.clientws.LibraryWeb;
+import org.cereme.digital.library.clientws.LibraryWs;
 import org.cereme.model.Work;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -19,6 +21,10 @@ public class LibraryController {
    @Autowired
     LibraryService libraryService;
 	WorkService workService;
+
+
+
+
 
 	@RequestMapping(value = "/home", method = RequestMethod.GET)
 	public ModelAndView home(){
@@ -74,6 +80,20 @@ public class LibraryController {
 		    return "library/home";
         }
 
+	}
+
+
+	@RequestMapping(value="/batch")
+	public String launchBatch() {
+
+		LibraryWeb libraryWeb = new LibraryWeb();
+		LibraryWs libraryWs = libraryWeb.getLibraryWsPort();
+		//libraryWs.init();
+
+		System.out.println("we are sending the fbi if you're not sending our book back");
+		libraryService.checkBorrowingsStatus();
+		//libraryWs.checkBorrowingsStatus();
+		return "/home";
 	}
 
 }

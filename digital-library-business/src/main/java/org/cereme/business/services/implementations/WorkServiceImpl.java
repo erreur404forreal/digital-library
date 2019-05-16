@@ -3,8 +3,6 @@ package org.cereme.business.services.implementations;
 import org.cereme.business.services.contracts.WorkService;
 import org.cereme.consumer.repositories.WorkRepository;
 import org.cereme.model.Book;
-import org.cereme.model.Borrowing;
-import org.cereme.model.Member;
 import org.cereme.model.Work;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -100,7 +98,8 @@ public class WorkServiceImpl implements WorkService {
     }
 
     public List<Work> findWorkByAuthorContainsAndTitleContains(String author, String title){
-        return workRepository.findWorkByAuthorContainsAndTitleContains(author, title);
+        List<Work> workList = workRepository.findWorkByAuthorContainsAndTitleContains(author, title);
+        return workList;
     }
 
 

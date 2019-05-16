@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="digital-library-webapp:war">
+    <output-path>$PROJECT_DIR$/digital-library-webapp/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>digital-library-webapp</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="digital-library-webapp.war">
+      <element id="artifact" artifact-name="digital-library-webapp:war exploded" />
+    </root>
+  </artifact>
+</component>
