@@ -65,35 +65,18 @@ public class LibraryController {
 		//libraryService.getWorkList(works)
 		return "library/condition";
 	}
-	@RequestMapping(value="/library/browse", method = RequestMethod.GET)
-	public String work(HttpServletRequest request, Model model) {
-		System.out.println("we are browsing works");
-		if(1==1) {
-            List<Work> workList = workService.getAll();
-            model.addAttribute("workList", workList);
-            for (Work work : workList) {
-                System.out.println(work.getTitle());
-                System.out.println(work.getAuthor());
-            }
-            return "borrowing/borrowings";
-        } else {
-		    return "library/home";
-        }
-
-	}
-
 
 	@RequestMapping(value="/batch")
 	public String launchBatch() {
 
 		LibraryWeb libraryWeb = new LibraryWeb();
 		LibraryWs libraryWs = libraryWeb.getLibraryWsPort();
-		//libraryWs.init();
+		libraryWs.init();
 
 		System.out.println("we are sending the fbi if you're not sending our book back");
-		libraryService.checkBorrowingsStatus();
-		//libraryWs.checkBorrowingsStatus();
-		return "/home";
+		//libraryService.checkBorrowingsStatus();
+		libraryWs.checkBorrowingsStatus();
+		return "home";
 	}
 
 }

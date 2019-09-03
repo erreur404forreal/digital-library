@@ -7,7 +7,6 @@ import javax.jws.WebParam;
 import javax.jws.WebResult;
 import javax.jws.WebService;
 import javax.xml.bind.annotation.XmlSeeAlso;
-import javax.xml.ws.Action;
 import javax.xml.ws.RequestWrapper;
 import javax.xml.ws.ResponseWrapper;
 
@@ -31,7 +30,6 @@ public interface WorkWs {
     @WebMethod
     @RequestWrapper(localName = "init", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.Init")
     @ResponseWrapper(localName = "initResponse", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.InitResponse")
-    @Action(input = "http://webservice.cereme.org/workWs/initRequest", output = "http://webservice.cereme.org/workWs/initResponse")
     public void init();
 
     /**
@@ -43,7 +41,6 @@ public interface WorkWs {
     @WebResult(targetNamespace = "")
     @RequestWrapper(localName = "getAll", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.GetAll")
     @ResponseWrapper(localName = "getAllResponse", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.GetAllResponse")
-    @Action(input = "http://webservice.cereme.org/workWs/getAllRequest", output = "http://webservice.cereme.org/workWs/getAllResponse")
     public List<Work> getAll();
 
     /**
@@ -57,27 +54,11 @@ public interface WorkWs {
     @WebResult(targetNamespace = "")
     @RequestWrapper(localName = "findWorkByAuthorContainsAndTitleContains", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.FindWorkByAuthorContainsAndTitleContains")
     @ResponseWrapper(localName = "findWorkByAuthorContainsAndTitleContainsResponse", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.FindWorkByAuthorContainsAndTitleContainsResponse")
-    @Action(input = "http://webservice.cereme.org/workWs/findWorkByAuthorContainsAndTitleContainsRequest", output = "http://webservice.cereme.org/workWs/findWorkByAuthorContainsAndTitleContainsResponse")
     public List<Work> findWorkByAuthorContainsAndTitleContains(
         @WebParam(name = "arg0", targetNamespace = "")
         String arg0,
         @WebParam(name = "arg1", targetNamespace = "")
         String arg1);
-
-    /**
-     * 
-     * @param arg0
-     * @return
-     *     returns boolean
-     */
-    @WebMethod
-    @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "isValidByAuthor", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.IsValidByAuthor")
-    @ResponseWrapper(localName = "isValidByAuthorResponse", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.IsValidByAuthorResponse")
-    @Action(input = "http://webservice.cereme.org/workWs/isValidByAuthorRequest", output = "http://webservice.cereme.org/workWs/isValidByAuthorResponse")
-    public boolean isValidByAuthor(
-        @WebParam(name = "arg0", targetNamespace = "")
-        String arg0);
 
     /**
      * 
@@ -89,7 +70,6 @@ public interface WorkWs {
     @WebResult(targetNamespace = "")
     @RequestWrapper(localName = "findWorkByAuthor", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.FindWorkByAuthor")
     @ResponseWrapper(localName = "findWorkByAuthorResponse", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.FindWorkByAuthorResponse")
-    @Action(input = "http://webservice.cereme.org/workWs/findWorkByAuthorRequest", output = "http://webservice.cereme.org/workWs/findWorkByAuthorResponse")
     public List<Work> findWorkByAuthor(
         @WebParam(name = "arg0", targetNamespace = "")
         String arg0);
@@ -104,9 +84,22 @@ public interface WorkWs {
     @WebResult(targetNamespace = "")
     @RequestWrapper(localName = "findWorksById", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.FindWorksById")
     @ResponseWrapper(localName = "findWorksByIdResponse", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.FindWorksByIdResponse")
-    @Action(input = "http://webservice.cereme.org/workWs/findWorksByIdRequest", output = "http://webservice.cereme.org/workWs/findWorksByIdResponse")
     public Work findWorksById(
         @WebParam(name = "arg0", targetNamespace = "")
         Integer arg0);
+
+    /**
+     * 
+     * @param arg0
+     * @return
+     *     returns boolean
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "isValidByAuthor", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.IsValidByAuthor")
+    @ResponseWrapper(localName = "isValidByAuthorResponse", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.IsValidByAuthorResponse")
+    public boolean isValidByAuthor(
+        @WebParam(name = "arg0", targetNamespace = "")
+        String arg0);
 
 }

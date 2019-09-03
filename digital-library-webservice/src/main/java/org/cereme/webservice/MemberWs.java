@@ -14,7 +14,7 @@ import java.util.List;
 
 @Service
 @WebService(serviceName = "memberWeb",name = "memberWs")
-@SOAPBinding(style = SOAPBinding.Style.DOCUMENT, use = SOAPBinding.Use.ENCODED)
+@SOAPBinding(style = SOAPBinding.Style.DOCUMENT, use = SOAPBinding.Use.LITERAL)
 //@SOAPBinding(style = SOAPBinding.Style.DOCUMENT)
 public class MemberWs{
 

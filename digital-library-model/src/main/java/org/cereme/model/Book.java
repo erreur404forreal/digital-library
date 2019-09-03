@@ -7,7 +7,7 @@ import javax.persistence.*;
 public class Book {
 
     @Id
-    private Integer bookId;
+    private int bookId;
     private boolean isAvailable;
     @OneToOne
     private Borrowing borrowing;
@@ -16,17 +16,17 @@ public class Book {
 
     }
 
-    public Book(Integer bookId, boolean isAvailable, Borrowing borrowing) {
+    public Book(int bookId, boolean isAvailable, Borrowing borrowing) {
         this.bookId = bookId;
         this.isAvailable = isAvailable;
         this.borrowing = borrowing;
     }
 
-    public Integer getBookId() {
+    public int getBookId() {
         return bookId;
     }
 
-    public void setBookId(Integer bookId) {
+    public void setBookId(int bookId) {
         this.bookId = bookId;
     }
 

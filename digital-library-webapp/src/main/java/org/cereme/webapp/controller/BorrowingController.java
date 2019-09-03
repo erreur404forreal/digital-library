@@ -8,6 +8,8 @@ import org.cereme.digital.library.clientws.BorrowingWs;
 import org.cereme.digital.library.clientws.WorkWeb;
 import org.cereme.digital.library.clientws.WorkWs;
 import org.cereme.model.Borrowing;
+import org.cereme.model.Member;
+import org.cereme.model.Work;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -49,14 +51,14 @@ public class BorrowingController {
 
         WorkWeb workWeb = new WorkWeb();
         WorkWs workWs = workWeb.getWorkWsPort();
-        //workWs.init();
+        workWs.init();
 
         BorrowingWeb borrowingWeb = new BorrowingWeb();
         BorrowingWs borrowingWs = borrowingWeb.getBorrowingWsPort();
         borrowingWs.init();
 
         String username = request.getParameter("login");
-        //Member loggedmember = (Member)request.getSession().getAttribute("loggedmember");
+        //Member loggedmember = (Member) request.getSession().getAttribute("loggedmember");
         org.cereme.digital.library.clientws.Member loggedmember;
         loggedmember = (org.cereme.digital.library.clientws.Member)request.getSession().getAttribute("loggedmember");
         //List<Borrowing> borrowingList =  borrowingService.findByMember(loggedmember);
@@ -72,11 +74,11 @@ public class BorrowingController {
 
         WorkWeb workWeb = new WorkWeb();
         WorkWs workWs = workWeb.getWorkWsPort();
-        //workWs.init();
+        workWs.init();
 
         BorrowingWeb borrowingWeb = new BorrowingWeb();
         BorrowingWs borrowingWs = borrowingWeb.getBorrowingWsPort();
-        //borrowingWs.init();
+        borrowingWs.init();
 
         ModelAndView modelAndView = null;
         if (request != null && request.getSession().getAttribute("loggedin") == null) {
@@ -109,11 +111,11 @@ public class BorrowingController {
 
         WorkWeb workWeb = new WorkWeb();
         WorkWs workWs = workWeb.getWorkWsPort();
-        //workWs.init();
+        workWs.init();
 
         BorrowingWeb borrowingWeb = new BorrowingWeb();
         BorrowingWs borrowingWs = borrowingWeb.getBorrowingWsPort();
-        //borrowingWs.init();
+        borrowingWs.init();
 
         ModelAndView modelAndView = null;
         if (request != null && request.getSession().getAttribute("loggedin") == null) {
@@ -146,7 +148,7 @@ public class BorrowingController {
 
         WorkWeb workWeb = new WorkWeb();
         WorkWs workWs = workWeb.getWorkWsPort();
-        //workWs.init();
+        workWs.init();
 
         BorrowingWeb borrowingWeb = new BorrowingWeb();
         BorrowingWs borrowingWs = borrowingWeb.getBorrowingWsPort();

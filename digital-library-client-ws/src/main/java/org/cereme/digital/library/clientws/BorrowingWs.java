@@ -7,7 +7,6 @@ import javax.jws.WebParam;
 import javax.jws.WebResult;
 import javax.jws.WebService;
 import javax.xml.bind.annotation.XmlSeeAlso;
-import javax.xml.ws.Action;
 import javax.xml.ws.RequestWrapper;
 import javax.xml.ws.ResponseWrapper;
 
@@ -31,23 +30,7 @@ public interface BorrowingWs {
     @WebMethod
     @RequestWrapper(localName = "init", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.Init")
     @ResponseWrapper(localName = "initResponse", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.InitResponse")
-    @Action(input = "http://webservice.cereme.org/borrowingWs/initRequest", output = "http://webservice.cereme.org/borrowingWs/initResponse")
     public void init();
-
-    /**
-     * 
-     * @param arg0
-     * @return
-     *     returns org.cereme.digital.library.clientws.Borrowing
-     */
-    @WebMethod
-    @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "endAborrowing", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.EndAborrowing")
-    @ResponseWrapper(localName = "endAborrowingResponse", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.EndAborrowingResponse")
-    @Action(input = "http://webservice.cereme.org/borrowingWs/endAborrowingRequest", output = "http://webservice.cereme.org/borrowingWs/endAborrowingResponse")
-    public Borrowing endAborrowing(
-        @WebParam(name = "arg0", targetNamespace = "")
-        Integer arg0);
 
     /**
      * 
@@ -59,7 +42,6 @@ public interface BorrowingWs {
     @WebResult(targetNamespace = "")
     @RequestWrapper(localName = "findByMember", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.FindByMember")
     @ResponseWrapper(localName = "findByMemberResponse", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.FindByMemberResponse")
-    @Action(input = "http://webservice.cereme.org/borrowingWs/findByMemberRequest", output = "http://webservice.cereme.org/borrowingWs/findByMemberResponse")
     public List<Borrowing> findByMember(
         @WebParam(name = "arg0", targetNamespace = "")
         Member arg0);
@@ -72,10 +54,23 @@ public interface BorrowingWs {
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "findByBorrowingId", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.FindByBorrowingId")
-    @ResponseWrapper(localName = "findByBorrowingIdResponse", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.FindByBorrowingIdResponse")
-    @Action(input = "http://webservice.cereme.org/borrowingWs/findByBorrowingIdRequest", output = "http://webservice.cereme.org/borrowingWs/findByBorrowingIdResponse")
-    public Borrowing findByBorrowingId(
+    @RequestWrapper(localName = "extendAborrowing", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.ExtendAborrowing")
+    @ResponseWrapper(localName = "extendAborrowingResponse", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.ExtendAborrowingResponse")
+    public Borrowing extendAborrowing(
+        @WebParam(name = "arg0", targetNamespace = "")
+        Integer arg0);
+
+    /**
+     * 
+     * @param arg0
+     * @return
+     *     returns org.cereme.digital.library.clientws.Borrowing
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "endAborrowing", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.EndAborrowing")
+    @ResponseWrapper(localName = "endAborrowingResponse", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.EndAborrowingResponse")
+    public Borrowing endAborrowing(
         @WebParam(name = "arg0", targetNamespace = "")
         Integer arg0);
 
@@ -90,7 +85,6 @@ public interface BorrowingWs {
     @WebResult(targetNamespace = "")
     @RequestWrapper(localName = "makeAborrowing", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.MakeAborrowing")
     @ResponseWrapper(localName = "makeAborrowingResponse", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.MakeAborrowingResponse")
-    @Action(input = "http://webservice.cereme.org/borrowingWs/makeAborrowingRequest", output = "http://webservice.cereme.org/borrowingWs/makeAborrowingResponse")
     public Borrowing makeAborrowing(
         @WebParam(name = "arg0", targetNamespace = "")
         Integer arg0,
@@ -105,10 +99,9 @@ public interface BorrowingWs {
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "extendAborrowing", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.ExtendAborrowing")
-    @ResponseWrapper(localName = "extendAborrowingResponse", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.ExtendAborrowingResponse")
-    @Action(input = "http://webservice.cereme.org/borrowingWs/extendAborrowingRequest", output = "http://webservice.cereme.org/borrowingWs/extendAborrowingResponse")
-    public Borrowing extendAborrowing(
+    @RequestWrapper(localName = "findByBorrowingId", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.FindByBorrowingId")
+    @ResponseWrapper(localName = "findByBorrowingIdResponse", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.FindByBorrowingIdResponse")
+    public Borrowing findByBorrowingId(
         @WebParam(name = "arg0", targetNamespace = "")
         Integer arg0);
 

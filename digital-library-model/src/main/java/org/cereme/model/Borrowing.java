@@ -10,7 +10,7 @@ public class Borrowing {
     @GeneratedValue(generator="gen_borrow", strategy = GenerationType.IDENTITY)
     @SequenceGenerator(name="gen_borrow", sequenceName="seq_borrow", allocationSize=1)
     private Integer idborrow;
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.EAGER)
     private Member member;
     @OneToOne
     private Book book;

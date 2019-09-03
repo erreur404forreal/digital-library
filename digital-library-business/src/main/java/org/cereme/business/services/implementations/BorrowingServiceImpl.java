@@ -12,6 +12,7 @@ import org.cereme.model.Work;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
@@ -153,8 +154,10 @@ public class BorrowingServiceImpl implements BorrowingService {
 				borrowingToSave.setIssueDate(now);
 				//add 4 week to the Issue date
 				//LocalDate next4Week = borrowingToSave.getIssueDate().plus(4, ChronoUnit.WEEKS);
-				Long date = (borrowingToSave.getIssueDate().getTime()) + (28 * 24 * 3600 * 1000) ;
-				Date next4Week = new Date(date);
+
+				Calendar calendar = Calendar.getInstance();
+				calendar.add(Calendar.DAY_OF_YEAR,28);
+				Date next4Week = calendar.getTime();
 				borrowingToSave.setReturnDate(next4Week);
 
 				borrowingToSave.setStatus("En Cours");
@@ -176,8 +179,15 @@ public class BorrowingServiceImpl implements BorrowingService {
 	public Borrowing extendAborrowing(Integer idborrow){
 		Borrowing borrowToReturn = borrowingRepository.findBorrowingByIdborrow(idborrow);
 
-		Long date = (borrowToReturn.getIssueDate().getTime()) + (28 * 24 * 3600 * 1000) ;
-		Date next4Week = new Date(date);
+
+		Date date = new Date(borrowToReturn.getIssueDate().getTime());
+
+		Calendar calendar = Calendar.getInstance();
+		calendar.setTime(date);
+
+		calendar.add(Calendar.DAY_OF_YEAR,28);
+		Date next4Week = calendar.getTime();
+
 		//LocalDate next4Week = borrowToReturn.getReturnDate().plus(4, ChronoUnit.WEEKS);
 		borrowToReturn.setReturnDate(next4Week);
 		borrowToReturn.setStatus("En Cours et Prolongé");

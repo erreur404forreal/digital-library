@@ -17,7 +17,7 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="available" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="bookId" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
+ *         &lt;element name="bookId" type="{http://www.w3.org/2001/XMLSchema}int"/>
  *         &lt;element name="borrowing" type="{http://webservice.cereme.org/}borrowing" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
@@ -36,7 +36,7 @@ import javax.xml.bind.annotation.XmlType;
 public class Book {
 
     protected boolean available;
-    protected Integer bookId;
+    protected int bookId;
     protected Borrowing borrowing;
 
     /**
@@ -58,24 +58,16 @@ public class Book {
     /**
      * Obtient la valeur de la propriété bookId.
      * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
      */
-    public Integer getBookId() {
+    public int getBookId() {
         return bookId;
     }
 
     /**
      * Définit la valeur de la propriété bookId.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
      */
-    public void setBookId(Integer value) {
+    public void setBookId(int value) {
         this.bookId = value;
     }
 

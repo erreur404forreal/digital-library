@@ -6,6 +6,7 @@
   <groupId>org.cereme</groupId>
   <artifactId>digital-library-client-ws</artifactId>
   <version>1.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
 
   <name>digital-library-client-ws</name>
   <!-- FIXME change it to the project's website -->
@@ -18,6 +19,7 @@
   </properties>
 
   <dependencies>
+
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>

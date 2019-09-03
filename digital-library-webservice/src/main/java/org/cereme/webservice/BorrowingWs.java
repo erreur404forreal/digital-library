@@ -40,19 +40,16 @@ public class BorrowingWs{
 
     @WebMethod
     public List<Borrowing> findByMember(Member member) {
-        return borrowingService.findByMember(member);
+    	List<Borrowing> list = borrowingService.findByMember(member);
+    	System.out.println(list);
+    	return list;
+//        return borrowingService.findByMember(member);
     }
 
     @WebMethod
     public Borrowing makeAborrowing(Integer workId, Member member) {
         return borrowingService.makeAborrowing(workId, member);
     }
-
-    /*@WebMethod
-    public boolean launchSendEmail(){
-
-       return borrowingService.launchSendEmail();
-    }*/
 
     @WebMethod
     @PostConstruct

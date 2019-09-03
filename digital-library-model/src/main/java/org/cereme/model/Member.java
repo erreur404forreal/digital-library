@@ -12,7 +12,7 @@ public class Member extends User{
     private String lastName;
     private String email;
     private String address;
-    @OneToMany
+    @OneToMany(fetch = FetchType.EAGER)
     private List<Borrowing> borrowing;
 
 

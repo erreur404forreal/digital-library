@@ -14,16 +14,18 @@ http://www.springframework.org/schema/context/spring-context.xsd
 http://www.springframework.org/schema/tx
 http://www.springframework.org/schema/tx/spring-tx.xsd
 http://www.springframework.org/schema/mvc
-http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+http://www.springframework.org/schema/mvc/spring-mvc.xsd
+">
 
 	<!-- Spring container scans the base package of the applications to configure
 		as beans -->
+
+	<context:component-scan base-package="org.cereme.*" />
+	<!--<mvc:annotation-driven />-->
+
+
 	<context:annotation-config/>
 	<!-- Define all the annotation (@Service,@Controller,@Repository @Autowired -->
-	<context:component-scan base-package="org.cereme.*" />
-
-
-
 	<!-- Data Source -->
 	<bean id="dataSource"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">

@@ -1,6 +1,10 @@
 package org.cereme.webapp.controller;
+import org.cereme.digital.library.clientws.WorkWeb;
+import org.cereme.digital.library.clientws.WorkWs;
 
-import org.cereme.digital.library.clientws.*;
+import org.cereme.business.services.contracts.WorkService;
+import org.cereme.model.Work;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.DispatcherServlet;
@@ -11,11 +15,12 @@ import java.util.List;
 
 
 
+
 @Controller
 public class WorkController {
 
-	/*@Autowired
-	WorkService workService;*/
+	@Autowired
+	WorkService workService;
 
 
 
@@ -33,7 +38,7 @@ public class WorkController {
 
 		WorkWeb workWeb = new WorkWeb();
 		WorkWs workWs = workWeb.getWorkWsPort();
-		//workWs.init();
+		workWs.init();
 
 		ModelAndView modelAndView = new ModelAndView("work/workinformations");
 		//Work work = workService.findWorksById(worksId);
@@ -52,7 +57,7 @@ public class WorkController {
 
 		WorkWeb workWeb = new WorkWeb();
 		WorkWs workWs = workWeb.getWorkWsPort();
-		//workWs.init();
+		workWs.init();
 
 		//List<Work> workList = workService.findWorkByAuthor(author);
 		List<org.cereme.digital.library.clientws.Work> workList = workWs.findWorkByAuthor(author);
@@ -78,7 +83,7 @@ public class WorkController {
 
 		WorkWeb workWeb = new WorkWeb();
 		WorkWs workWs = workWeb.getWorkWsPort();
-		//workWs.init();
+		workWs.init();
 		//List<Work> workList = workService.findWorkByAuthorContainsAndTitleContains(author,title);
 		List<org.cereme.digital.library.clientws.Work> workList = workWs.findWorkByAuthorContainsAndTitleContains(author,title);
 
@@ -90,33 +95,6 @@ public class WorkController {
 		return modelAndView;
 	}
 
-
-	/*@RequestMapping(value = "/work/year", method = RequestMethod.GET)
-	public ModelAndView searchbyyear(@PathVariable Integer publicationYear) {
-		boolean verification;
-		System.out.println("searching by year");
-		ModelAndView modelAndView = null;
-
-		List<Work> workList = workService.findWorkByPublicationYear(publicationYear);
-		verification = workService.isValidByYear(publicationYear);
-		if(verification)
-		{
-			if(publicationYear!=null)
-			{
-				modelAndView = new ModelAndView("work/searchedwork");
-				modelAndView.addObject("workList", workList);
-			}else{
-				modelAndView = new ModelAndView("library/errorpage");
-				modelAndView.addObject("msg", "une erreur est survenue lors du traitement de la recherche");
-
-			}
-		}else{
-			modelAndView = new ModelAndView("library/errorpage");
-			modelAndView.addObject("msg", "une erreur est survenue lors du traitement");
-		}
-
-		return modelAndView;
-	}*/
 
 
 }

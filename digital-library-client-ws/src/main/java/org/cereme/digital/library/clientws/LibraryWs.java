@@ -5,7 +5,6 @@ import javax.jws.WebMethod;
 import javax.jws.WebResult;
 import javax.jws.WebService;
 import javax.xml.bind.annotation.XmlSeeAlso;
-import javax.xml.ws.Action;
 import javax.xml.ws.RequestWrapper;
 import javax.xml.ws.ResponseWrapper;
 
@@ -29,7 +28,6 @@ public interface LibraryWs {
     @WebMethod
     @RequestWrapper(localName = "init", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.Init")
     @ResponseWrapper(localName = "initResponse", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.InitResponse")
-    @Action(input = "http://webservice.cereme.org/libraryWs/initRequest", output = "http://webservice.cereme.org/libraryWs/initResponse")
     public void init();
 
     /**
@@ -41,7 +39,6 @@ public interface LibraryWs {
     @WebResult(targetNamespace = "")
     @RequestWrapper(localName = "checkBorrowingsStatus", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.CheckBorrowingsStatus")
     @ResponseWrapper(localName = "checkBorrowingsStatusResponse", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.CheckBorrowingsStatusResponse")
-    @Action(input = "http://webservice.cereme.org/libraryWs/checkBorrowingsStatusRequest", output = "http://webservice.cereme.org/libraryWs/checkBorrowingsStatusResponse")
     public boolean checkBorrowingsStatus();
 
 }
