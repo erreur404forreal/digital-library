@@ -11,12 +11,12 @@ Projet Maven digital-library :
 
 Modules :
 
-Consumer -> Contient des interfaces des méthodes relatives aux différentes classes définies dans le modèle. Interfaces étendant l’interface CrudRepository.
-Business -> Contientla logique métier : les interfaces et les implémentations des autres méthodes utilisées.
-Webapp -> Contient le site Web (JSP) et les controllers qui appellent les webservices.
-Modèle -> Contient les classes autours desquelles s’articule le projet.
-Webservices -> Contient les services qui à exposer. 
-Client-WS -> Contient les classes auto-générées.
+- Consumer -> Contient des interfaces des méthodes relatives aux différentes classes définies dans le modèle. Interfaces étendant l’interface CrudRepository.
+- Business -> Contientla logique métier : les interfaces et les implémentations des autres méthodes utilisées.
+- Webapp -> Contient le site Web (JSP) et les controllers qui appellent les webservices.
+- Modèle -> Contient les classes autours desquelles s’articule le projet.
+- Webservices -> Contient les services qui à exposer. 
+- Client-WS -> Contient les classes auto-générées.
 
 
 
