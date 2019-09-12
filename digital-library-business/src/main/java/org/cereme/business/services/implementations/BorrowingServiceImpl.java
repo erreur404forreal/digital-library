@@ -135,25 +135,18 @@ public class BorrowingServiceImpl implements BorrowingService {
 	 */
 	public Borrowing makeAborrowing(Integer workId, Member member){
 		Borrowing borrowToReturn = null;
-		Work workGot = workRepository.findById(workId).get();//Récuperer l'oeuvre, --> workGot
+		Work workGot = workRepository.findById(workId).get();
 		List<Book> books= workGot.getBooks();
 
 		for (Book book : books)
 		{
-
-			//Parcourir liste book de workGot
-			//pour chaque book
-			//si book Is Available
 			if (book.isAvailable() == true)
 			{
 				Borrowing borrowingToSave = new Borrowing();
 				borrowingToSave.setBook(book);
 				borrowingToSave.setMember(member);
-				//borrowingToSave.setIssueDate(LocalDate.now());
 				Date now = new java.util.Date();
 				borrowingToSave.setIssueDate(now);
-				//add 4 week to the Issue date
-				//LocalDate next4Week = borrowingToSave.getIssueDate().plus(4, ChronoUnit.WEEKS);
 
 				Calendar calendar = Calendar.getInstance();
 				calendar.add(Calendar.DAY_OF_YEAR,28);
@@ -164,13 +157,11 @@ public class BorrowingServiceImpl implements BorrowingService {
 				borrowingToSave.getBook().setAvailable(false);
 				borrowingToSave.setExtended(false);
 				borrowingToSave.setTitleofbook(workGot.getTitle());
-				//save borrowToSave, mettre dans un variable borrowToReturn le resultat de save
 				borrowToReturn = borrowingRepository.save(borrowingToSave);
 				break;
 
 			}
 		}
-		//on ne fait rien(pas de else)
 
 
 		return borrowToReturn;
@@ -180,7 +171,7 @@ public class BorrowingServiceImpl implements BorrowingService {
 		Borrowing borrowToReturn = borrowingRepository.findBorrowingByIdborrow(idborrow);
 
 
-		Date date = new Date(borrowToReturn.getIssueDate().getTime());
+		Date date = new Date(borrowToReturn.getReturnDate().getTime());
 
 		Calendar calendar = Calendar.getInstance();
 		calendar.setTime(date);
@@ -188,7 +179,6 @@ public class BorrowingServiceImpl implements BorrowingService {
 		calendar.add(Calendar.DAY_OF_YEAR,28);
 		Date next4Week = calendar.getTime();
 
-		//LocalDate next4Week = borrowToReturn.getReturnDate().plus(4, ChronoUnit.WEEKS);
 		borrowToReturn.setReturnDate(next4Week);
 		borrowToReturn.setStatus("En Cours et Prolongé");
 
@@ -204,11 +194,9 @@ public class BorrowingServiceImpl implements BorrowingService {
 
 		Date now = new java.util.Date();
 		borrowToReturn.setIssueDate(now);
-		//borrowToReturn.setReturnDate(LocalDate.now());
 		borrowToReturn.setStatus("Prêt terminé");
 		borrowToReturn.getBook().setAvailable(true);
 		borrowToReturn = borrowingRepository.save(borrowToReturn);
-
 
 		return borrowToReturn;
 	}

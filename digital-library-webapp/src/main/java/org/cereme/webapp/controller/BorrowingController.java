@@ -40,7 +40,6 @@ public class BorrowingController {
 
         System.out.println("borrowing found");
         return this.borrowingService.findByBorrowingId(id);
-        //return this.borrowingWs.findByBorrowingId(id);
     }
 
 
@@ -58,17 +57,15 @@ public class BorrowingController {
         borrowingWs.init();
 
         String username = request.getParameter("login");
-        //Member loggedmember = (Member) request.getSession().getAttribute("loggedmember");
         org.cereme.digital.library.clientws.Member loggedmember;
         loggedmember = (org.cereme.digital.library.clientws.Member)request.getSession().getAttribute("loggedmember");
-        //List<Borrowing> borrowingList =  borrowingService.findByMember(loggedmember);
         List<org.cereme.digital.library.clientws.Borrowing> borrowingList = borrowingWs.findByMember(loggedmember);
         ModelAndView modelAndView = new ModelAndView("borrowing/borrowings");
         modelAndView.addObject("borrowingList", borrowingList);
         return modelAndView;
     }
 
-    //extend borrowing
+
     @RequestMapping(value = "/borrowing/extend/{idborrow}", method = RequestMethod.GET)
     public ModelAndView Extendborrow(HttpServletRequest request, @PathVariable("idborrow") Integer idborrow) {
 
@@ -86,12 +83,9 @@ public class BorrowingController {
             modelAndView.addObject("msg", "Connectez vous pour emprunter un livre plus longtemps");
         }else if(request != null && request.getSession().getAttribute("loggedin") != null)
         {
-            //Member loggedmember = (Member)request.getSession().getAttribute("loggedmember");
             org.cereme.digital.library.clientws.Member loggedmember;
             loggedmember = (org.cereme.digital.library.clientws.Member)request.getSession().getAttribute("loggedmember");
-            //Borrowing borrowingextended = borrowingService.extendAborrowing(idborrow);
-            org.cereme.digital.library.clientws.Borrowing borrowingextended = borrowingWs.endAborrowing(idborrow);
-            //List<Borrowing> borrowingList =  borrowingService.findByMember(loggedmember);
+            org.cereme.digital.library.clientws.Borrowing borrowingextended = borrowingWs.extendAborrowing(idborrow);
             List<org.cereme.digital.library.clientws.Borrowing> borrowingList = borrowingWs.findByMember(loggedmember);
             modelAndView = new ModelAndView("borrowing/borrowings");
             modelAndView.addObject("loggedmember", loggedmember);
@@ -123,14 +117,9 @@ public class BorrowingController {
             modelAndView.addObject("msg", "Connectez vous pour emprunter un livre");
         }else if(request != null && request.getSession().getAttribute("loggedin") != null)
         {
-
-            //Member loggedmember = (Member)request.getSession().getAttribute("loggedmember");
             org.cereme.digital.library.clientws.Member loggedmember ;
             loggedmember = (org.cereme.digital.library.clientws.Member)request.getSession().getAttribute("loggedmember");
-            //Work borrowed = workService.findWorksById(worksId);
             org.cereme.digital.library.clientws.Work borrowed = workWs.findWorksById(worksId);
-
-                //Borrowing borrowingmade = borrowingService.makeAborrowing(worksId, loggedmember);
                 org.cereme.digital.library.clientws.Borrowing borrowingmade = borrowingWs.makeAborrowing(worksId, loggedmember);
                 modelAndView = new ModelAndView("borrowing/succeeded");
                 modelAndView.addObject("loggedmember", loggedmember);
@@ -138,11 +127,9 @@ public class BorrowingController {
                 modelAndView.addObject("borrowingmade",borrowingmade);
         }
 
-
         return modelAndView;
     }
 
-    //terminate borrowing
     @RequestMapping(value = "/borrowing/handover/{idborrow}", method = RequestMethod.GET)
     public ModelAndView Terminate(HttpServletRequest request, @PathVariable("idborrow") Integer idborrow) {
 
@@ -160,14 +147,9 @@ public class BorrowingController {
             modelAndView.addObject("msg", "Connectez vous pour emprunter un livre plus longtemps");
         }else if(request != null && request.getSession().getAttribute("loggedin") != null)
         {
-            //Member loggedmember = (Member)request.getSession().getAttribute("loggedmember");
             org.cereme.digital.library.clientws.Member loggedmember;
             loggedmember = (org.cereme.digital.library.clientws.Member)request.getSession().getAttribute("loggedmember");
-
-           //Borrowing borrowingended = borrowingService.endAborrowing(idborrow);
             org.cereme.digital.library.clientws.Borrowing borrowingended = borrowingWs.endAborrowing(idborrow);
-            //Récuperer la liste des emprunts de l'utilisatateur
-            //List<Borrowing> borrowingList =  borrowingService.findByMember(loggedmember);
             List<org.cereme.digital.library.clientws.Borrowing> borrowingList = borrowingWs.findByMember(loggedmember);
             modelAndView = new ModelAndView("borrowing/borrowings");
             modelAndView.addObject("loggedmember", loggedmember);

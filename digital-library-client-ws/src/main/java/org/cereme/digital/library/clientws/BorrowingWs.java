@@ -36,15 +36,15 @@ public interface BorrowingWs {
      * 
      * @param arg0
      * @return
-     *     returns java.util.List<org.cereme.digital.library.clientws.Borrowing>
+     *     returns org.cereme.digital.library.clientws.Borrowing
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "findByMember", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.FindByMember")
-    @ResponseWrapper(localName = "findByMemberResponse", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.FindByMemberResponse")
-    public List<Borrowing> findByMember(
+    @RequestWrapper(localName = "findByBorrowingId", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.FindByBorrowingId")
+    @ResponseWrapper(localName = "findByBorrowingIdResponse", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.FindByBorrowingIdResponse")
+    public Borrowing findByBorrowingId(
         @WebParam(name = "arg0", targetNamespace = "")
-        Member arg0);
+        Integer arg0);
 
     /**
      * 
@@ -95,14 +95,14 @@ public interface BorrowingWs {
      * 
      * @param arg0
      * @return
-     *     returns org.cereme.digital.library.clientws.Borrowing
+     *     returns java.util.List<org.cereme.digital.library.clientws.Borrowing>
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "findByBorrowingId", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.FindByBorrowingId")
-    @ResponseWrapper(localName = "findByBorrowingIdResponse", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.FindByBorrowingIdResponse")
-    public Borrowing findByBorrowingId(
+    @RequestWrapper(localName = "findByMember", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.FindByMember")
+    @ResponseWrapper(localName = "findByMemberResponse", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.FindByMemberResponse")
+    public List<Borrowing> findByMember(
         @WebParam(name = "arg0", targetNamespace = "")
-        Integer arg0);
+        Member arg0);
 
 }

@@ -25,7 +25,6 @@ public class MemberController {
 	public ModelAndView Viewprofile(DispatcherServlet request) throws IOException {
 
 		ModelAndView modelAndView = new ModelAndView("member/profile");
-
 		return modelAndView;
 	}
 
@@ -33,7 +32,6 @@ public class MemberController {
 	public ModelAndView changeprofile(DispatcherServlet request) throws IOException {
 
 		ModelAndView modelAndView = new ModelAndView("member/changeinf");
-
 		return modelAndView;
 	}
 
@@ -56,7 +54,6 @@ public class MemberController {
 		String password = request.getParameter("password");
 		System.out.println("Identifiants utilisés : " + username + " " + password);
 		if (username != null && password != null) {
-//			result = memberService.isValidUser(username, password);
 			result = memberWs.isValidUser(username, password);
 			System.out.println("Utilisateur valide");
 
@@ -65,7 +62,6 @@ public class MemberController {
 				modelAndView = new ModelAndView("member/profile");
 				Member memberlogged = memberWs.findByUsername(username);
 				System.out.println("Step_1");
-//				org.cereme.digital.library.clientws.Member memberlogged = memberWs.findByUsername(username);
 				System.out.println("Utilisateur trouvé : " + username);
 						request.getSession().setAttribute("loggedin", true);
 				request.getSession().setAttribute("loggedmember", memberlogged);
@@ -108,12 +104,9 @@ public class MemberController {
 		String address = request.getParameter("address");
 
 		Member memberlogged = memberWs.findByUsername(username);
-		//org.cereme.digital.library.clientws.Member memberlogged = memberWs.findByUsername(username);
 		memberlogged.setAddress(address);
 		memberlogged.setEmail(email);
-//		memberService.updateMember(memberlogged);
 		memberWs.updateMember(memberlogged);
-
 		ModelAndView modelAndView = new ModelAndView("member/profile");
         modelAndView.addObject("loggedmember", memberlogged);
 

@@ -41,28 +41,24 @@ public class LibraryController {
 	 @RequestMapping(value="/connection")
 	    public String login() {
 	    	System.out.println("we are in librarycontroller");
-	    	//libraryService.getWorkList(works)
 	    	return "member/login";
 	    }
 
 	@RequestMapping(value="/registration")
 	public String registration() {
 		System.out.println("we are in librarycontroller");
-		//libraryService.getWorkList(works)
 		return "member/registration";
 	}
 
 	@RequestMapping(value="/information")
 	public String information() {
 		System.out.println("we are in librarycontroller");
-		//libraryService.getWorkList(works)
 		return "library/information";
 	}
 
 	@RequestMapping(value="/condition")
 	public String condition() {
 		System.out.println("we are in librarycontroller");
-		//libraryService.getWorkList(works)
 		return "library/condition";
 	}
 
@@ -74,7 +70,6 @@ public class LibraryController {
 		libraryWs.init();
 
 		System.out.println("we are sending the fbi if you're not sending our book back");
-		//libraryService.checkBorrowingsStatus();
 		libraryWs.checkBorrowingsStatus();
 		return "home";
 	}

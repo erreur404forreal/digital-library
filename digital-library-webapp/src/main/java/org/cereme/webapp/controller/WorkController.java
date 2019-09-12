@@ -15,20 +15,16 @@ import java.util.List;
 
 
 
-
 @Controller
 public class WorkController {
 
 	@Autowired
 	WorkService workService;
 
-
-
 	@RequestMapping(value = "/searchwork", method = RequestMethod.GET)
 	public ModelAndView View(DispatcherServlet request) throws IOException {
 
 		ModelAndView modelAndView = new ModelAndView("work/searchworks");
-
 
 		return modelAndView;
 	}
@@ -41,14 +37,11 @@ public class WorkController {
 		workWs.init();
 
 		ModelAndView modelAndView = new ModelAndView("work/workinformations");
-		//Work work = workService.findWorksById(worksId);
 		org.cereme.digital.library.clientws.Work work = workWs.findWorksById(worksId);
 		modelAndView.addObject("work", work);
 
-
 		return modelAndView;
 	}
-
 
 
 	@RequestMapping(value = "/library/author/{author}", method = RequestMethod.GET)
@@ -59,42 +52,32 @@ public class WorkController {
 		WorkWs workWs = workWeb.getWorkWsPort();
 		workWs.init();
 
-		//List<Work> workList = workService.findWorkByAuthor(author);
 		List<org.cereme.digital.library.clientws.Work> workList = workWs.findWorkByAuthor(author);
 		for(org.cereme.digital.library.clientws.Work work : workList)
 		{
 			System.out.println("Titre : " + work.getTitle());
 			System.out.println("Auteur : " + work.getAuthor());
 			System.out.println("Description du livre : " + work.getBookDescription());
-
-
 		}
 		return workList;
 
 	}
 
 
-
-
 	@RequestMapping(value = "/work/search", method = RequestMethod.GET)
 	public ModelAndView searchbyauthorlikeafter(@RequestParam("author") String author, @RequestParam("title") String title) {
 		System.out.println("searching by author");
 
-
 		WorkWeb workWeb = new WorkWeb();
 		WorkWs workWs = workWeb.getWorkWsPort();
 		workWs.init();
-		//List<Work> workList = workService.findWorkByAuthorContainsAndTitleContains(author,title);
 		List<org.cereme.digital.library.clientws.Work> workList = workWs.findWorkByAuthorContainsAndTitleContains(author,title);
-
 
 			ModelAndView modelAndView = new ModelAndView("work/searchedwork");
 				modelAndView.addObject("workList", workList);
 
-
 		return modelAndView;
 	}
-
 
 
 }

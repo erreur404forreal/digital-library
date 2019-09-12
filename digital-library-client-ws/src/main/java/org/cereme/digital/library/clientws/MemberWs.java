@@ -47,15 +47,15 @@ public interface MemberWs {
      * 
      * @param arg0
      * @return
-     *     returns org.cereme.digital.library.clientws.Member
+     *     returns java.lang.String
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "findByUsername", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.FindByUsername")
-    @ResponseWrapper(localName = "findByUsernameResponse", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.FindByUsernameResponse")
-    public Member findByUsername(
+    @RequestWrapper(localName = "updateMember", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.UpdateMember")
+    @ResponseWrapper(localName = "updateMemberResponse", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.UpdateMemberResponse")
+    public String updateMember(
         @WebParam(name = "arg0", targetNamespace = "")
-        String arg0);
+        Member arg0);
 
     /**
      * 
@@ -78,14 +78,14 @@ public interface MemberWs {
      * 
      * @param arg0
      * @return
-     *     returns java.lang.String
+     *     returns org.cereme.digital.library.clientws.Member
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "updateMember", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.UpdateMember")
-    @ResponseWrapper(localName = "updateMemberResponse", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.UpdateMemberResponse")
-    public String updateMember(
+    @RequestWrapper(localName = "findByUsername", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.FindByUsername")
+    @ResponseWrapper(localName = "findByUsernameResponse", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.FindByUsernameResponse")
+    public Member findByUsername(
         @WebParam(name = "arg0", targetNamespace = "")
-        Member arg0);
+        String arg0);
 
 }

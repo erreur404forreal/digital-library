@@ -64,13 +64,13 @@ public interface WorkWs {
      * 
      * @param arg0
      * @return
-     *     returns java.util.List<org.cereme.digital.library.clientws.Work>
+     *     returns boolean
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "findWorkByAuthor", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.FindWorkByAuthor")
-    @ResponseWrapper(localName = "findWorkByAuthorResponse", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.FindWorkByAuthorResponse")
-    public List<Work> findWorkByAuthor(
+    @RequestWrapper(localName = "isValidByAuthor", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.IsValidByAuthor")
+    @ResponseWrapper(localName = "isValidByAuthorResponse", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.IsValidByAuthorResponse")
+    public boolean isValidByAuthor(
         @WebParam(name = "arg0", targetNamespace = "")
         String arg0);
 
@@ -92,13 +92,13 @@ public interface WorkWs {
      * 
      * @param arg0
      * @return
-     *     returns boolean
+     *     returns java.util.List<org.cereme.digital.library.clientws.Work>
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "isValidByAuthor", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.IsValidByAuthor")
-    @ResponseWrapper(localName = "isValidByAuthorResponse", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.IsValidByAuthorResponse")
-    public boolean isValidByAuthor(
+    @RequestWrapper(localName = "findWorkByAuthor", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.FindWorkByAuthor")
+    @ResponseWrapper(localName = "findWorkByAuthorResponse", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.FindWorkByAuthorResponse")
+    public List<Work> findWorkByAuthor(
         @WebParam(name = "arg0", targetNamespace = "")
         String arg0);
 
