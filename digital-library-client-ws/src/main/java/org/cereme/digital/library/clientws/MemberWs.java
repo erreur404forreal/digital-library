@@ -47,6 +47,20 @@ public interface MemberWs {
      * 
      * @param arg0
      * @return
+     *     returns org.cereme.digital.library.clientws.Member
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "findByUsername", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.FindByUsername")
+    @ResponseWrapper(localName = "findByUsernameResponse", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.FindByUsernameResponse")
+    public Member findByUsername(
+        @WebParam(name = "arg0", targetNamespace = "")
+        String arg0);
+
+    /**
+     * 
+     * @param arg0
+     * @return
      *     returns java.lang.String
      */
     @WebMethod
@@ -73,19 +87,5 @@ public interface MemberWs {
         String arg0,
         @WebParam(name = "arg1", targetNamespace = "")
         String arg1);
-
-    /**
-     * 
-     * @param arg0
-     * @return
-     *     returns org.cereme.digital.library.clientws.Member
-     */
-    @WebMethod
-    @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "findByUsername", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.FindByUsername")
-    @ResponseWrapper(localName = "findByUsernameResponse", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.FindByUsernameResponse")
-    public Member findByUsername(
-        @WebParam(name = "arg0", targetNamespace = "")
-        String arg0);
 
 }

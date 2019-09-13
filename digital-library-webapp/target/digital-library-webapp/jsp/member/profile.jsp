@@ -44,6 +44,7 @@
             <a href="${pageContext.request.contextPath}/member/changeinfos">Modifier</a>
 
         </p>
+        <button class="btn btn-dark"><a href="${pageContext.request.contextPath}/batch">Vérifier emprunts</a></button>
 
 
     </main>

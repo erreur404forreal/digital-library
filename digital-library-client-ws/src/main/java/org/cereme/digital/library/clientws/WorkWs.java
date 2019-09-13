@@ -64,6 +64,20 @@ public interface WorkWs {
      * 
      * @param arg0
      * @return
+     *     returns java.util.List<org.cereme.digital.library.clientws.Work>
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "findWorkByAuthor", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.FindWorkByAuthor")
+    @ResponseWrapper(localName = "findWorkByAuthorResponse", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.FindWorkByAuthorResponse")
+    public List<Work> findWorkByAuthor(
+        @WebParam(name = "arg0", targetNamespace = "")
+        String arg0);
+
+    /**
+     * 
+     * @param arg0
+     * @return
      *     returns boolean
      */
     @WebMethod
@@ -87,19 +101,5 @@ public interface WorkWs {
     public Work findWorksById(
         @WebParam(name = "arg0", targetNamespace = "")
         Integer arg0);
-
-    /**
-     * 
-     * @param arg0
-     * @return
-     *     returns java.util.List<org.cereme.digital.library.clientws.Work>
-     */
-    @WebMethod
-    @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "findWorkByAuthor", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.FindWorkByAuthor")
-    @ResponseWrapper(localName = "findWorkByAuthorResponse", targetNamespace = "http://webservice.cereme.org/", className = "org.cereme.digital.library.clientws.FindWorkByAuthorResponse")
-    public List<Work> findWorkByAuthor(
-        @WebParam(name = "arg0", targetNamespace = "")
-        String arg0);
 
 }

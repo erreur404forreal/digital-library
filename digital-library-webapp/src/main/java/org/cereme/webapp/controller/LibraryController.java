@@ -10,68 +10,72 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.DispatcherServlet;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
+
+import java.io.IOException;
 import java.util.List;
 
 @Controller
 public class LibraryController {
 
-   @Autowired
-    LibraryService libraryService;
+	@Autowired
+	LibraryService libraryService;
 	WorkService workService;
 
-
-
-
-
 	@RequestMapping(value = "/home", method = RequestMethod.GET)
-	public ModelAndView home(){
+	public ModelAndView home() {
 
 		ModelAndView modelAndView = new ModelAndView("member/login");
 
 		return modelAndView;
 	}
 
+	@RequestMapping(value = "/connection")
+	public String login() {
+		System.out.println("we are in librarycontroller");
+		return "member/login";
+	}
 
-
-
-
-	 @RequestMapping(value="/connection")
-	    public String login() {
-	    	System.out.println("we are in librarycontroller");
-	    	return "member/login";
-	    }
-
-	@RequestMapping(value="/registration")
+	@RequestMapping(value = "/registration")
 	public String registration() {
 		System.out.println("we are in librarycontroller");
 		return "member/registration";
 	}
 
-	@RequestMapping(value="/information")
+	@RequestMapping(value = "/information")
 	public String information() {
 		System.out.println("we are in librarycontroller");
 		return "library/information";
 	}
 
-	@RequestMapping(value="/condition")
+	@RequestMapping(value = "/condition")
 	public String condition() {
 		System.out.println("we are in librarycontroller");
 		return "library/condition";
 	}
 
-	@RequestMapping(value="/batch")
-	public String launchBatch() {
+	/*
+	 * @RequestMapping(value="/batch") public String launchBatch() {
+	 * 
+	 * LibraryWeb libraryWeb = new LibraryWeb(); LibraryWs libraryWs =
+	 * libraryWeb.getLibraryWsPort(); libraryWs.init();
+	 * 
+	 * System.out.
+	 * println("we are sending the fbi if you're not sending our book back");
+	 * libraryWs.checkBorrowingsStatus(); return "/home"; }
+	 */
+	@RequestMapping(value = "/batch", method = RequestMethod.GET)
+	public ModelAndView launchBatch(DispatcherServlet request) throws IOException {
 
-		LibraryWeb libraryWeb = new LibraryWeb();
-		LibraryWs libraryWs = libraryWeb.getLibraryWsPort();
-		libraryWs.init();
-
-		System.out.println("we are sending the fbi if you're not sending our book back");
+		LibraryWeb libraryWeb = new LibraryWeb(); LibraryWs libraryWs =
+		libraryWeb.getLibraryWsPort(); libraryWs.init(); 
+				 
 		libraryWs.checkBorrowingsStatus();
-		return "home";
+		ModelAndView modelAndView = new ModelAndView("member/login");
+		return modelAndView;
 	}
 
 }

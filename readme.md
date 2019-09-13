@@ -27,9 +27,10 @@ Technologies :
 3.	Installer Mysql 
 4.	Exécuter le script de création de base et d’utilisateur
 5.	Exécuter le script contenant le jeu de données
-6.	Déployer le War contenant ‘digital-library-webservice’ puis celui contenant ‘digital-library-webapp’
-7.  L'application web est désormais disponible via l'URL suivante : http://localhost:8082/home
-8.	Choisir un utilisateur de test parmi les deux suivant  : 
+6.	Effacer les adresses mail definies dans la table 'member' et les remplacer par une adresse ou on veut recevoir les mails de relance. 
+7.	Déployer le War contenant ‘digital-library-webservice’ puis celui contenant ‘digital-library-webapp’
+8.  L'application web est désormais disponible via l'URL suivante : http://localhost:8082/home
+9.	Choisir un utilisateur de test parmi les deux suivant  : 
 
 Utilisateur1 -> Pierre 
 Mot de passe -> pierre1
